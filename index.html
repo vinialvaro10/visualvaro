@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>visualvaro — site novo em breve</title>
+<meta name="description" content="visualvaro — design gráfico & web. Estamos em obras, site novo em breve. Portfólio no Behance e contato por WhatsApp.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="./assets/favicon.svg">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Telegraf';src:url('./fonts/PPTelegraf-Regular.otf') format('opentype');font-weight:400;font-display:swap}
+@font-face{font-family:'Telegraf';src:url('./fonts/PPTelegraf-UltraBold.otf') format('opentype');font-weight:800;font-display:swap}
+@font-face{font-family:'Telegraf';src:url('./fonts/PPTelegraf-UltraLight.otf') format('opentype');font-weight:200;font-display:swap}
+html{scroll-behavior:smooth}
+body{margin:0;background:#002963;font-family:'Telegraf',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#00AFEF;text-decoration:none}
+a:hover{color:#B668FF}
+::selection{background:#8D27E6;color:#fff}
+img{max-width:100%}
+@keyframes vvflutua{0%{transform:translateY(0)}50%{transform:translateY(-14px)}100%{transform:translateY(0)}}
+@keyframes vvgira{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes vvtomada{0%,100%{transform:translate(0,0) rotate(0)}25%{transform:translate(8px,-5px) rotate(2deg)}55%{transform:translate(16px,3px) rotate(-1.5deg)}78%{transform:translate(5px,-2px) rotate(.8deg)}}
+@keyframes vvcabo{0%,100%{transform:translate(0,0) rotate(0)}25%{transform:translate(-10px,-6px) rotate(-2.4deg)}55%{transform:translate(-22px,4px) rotate(1.8deg)}78%{transform:translate(-6px,-2px) rotate(-1deg)}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#002963;color:#fff">
+
+  <header style="background:#F6F8FC;border-bottom:1px solid rgba(0,41,99,.1)">
+    <div style="max-width:1240px;margin:0 auto;padding:18px clamp(16px,5vw,24px);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <img src="./assets/logo-topo-manutencao.svg" alt="visualvaro — design gráfico &amp; web" style="height:clamp(28px,4.4vw,38px);width:auto;display:block">
+      <nav style="display:flex;gap:clamp(16px,3vw,36px);flex-wrap:wrap">
+        <a href="https://behance.net/visualvaro" target="_blank" title="behance.net/visualvaro" style="color:#7C8DA6;font-size:15px">Portfólio</a>
+        <a href="https://wa.me/5511966383580" target="_blank" title="11 96638-3580" style="color:#7C8DA6;font-size:15px">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:clamp(48px,9vw,64px);padding:clamp(56px,12vw,96px) clamp(16px,5vw,24px)">
+    <h1 style="margin:0;line-height:1.05;letter-spacing:-.01em;font-weight:400;max-width:none"><span style="display:block;font-size:clamp(24px,3.6vw,44px);font-weight:200">Estamos em obras</span><strong style="display:block;white-space:nowrap;font-size:clamp(26px,5.2vw,66px);font-weight:800;margin-top:.06em">site novo em breve</strong></h1>
+    <div role="img" aria-label="Tomada e plugue desconectados" style="position:relative;width:min(100%,560px);aspect-ratio:970/709;animation:vvflutua 6.5s ease-in-out infinite">
+      <img src="./assets/man-bola.png" alt="" style="position:absolute;left:20.6%;top:0;width:72%;height:auto">
+      <img src="./assets/man-tomada.png" alt="" style="position:absolute;left:0;top:19.7%;width:43%;height:auto;transform-origin:50% 50%;animation:vvtomada 5.2s ease-in-out infinite">
+      <img src="./assets/man-cabo.png" alt="" style="position:absolute;left:47%;top:40%;width:53%;height:auto;transform-origin:95% 95%;animation:vvcabo 5.2s ease-in-out infinite">
+    </div>
+    <p style="margin:0;font-size:clamp(20px,3vw,30px);color:rgba(255,255,255,.9)">Até breve.</p>
+  </main>
+
+  <footer style="background:#002963;color:#fff;padding:clamp(24px,4vw,32px) clamp(16px,5vw,24px);position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,.16)">
+    <div style="position:absolute;inset:0;background-image:url('./assets/pattern.png');background-size:700px;opacity:.05;mix-blend-mode:screen"></div>
+    <div style="position:relative;max-width:1240px;margin:0 auto">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+        <img src="./assets/logo-visualvaro.png" alt="visualvaro — design gráfico &amp; web" style="height:clamp(26px,3.4vw,36px);width:auto;display:block">
+        <a href="https://wa.me/5511966383580" target="_blank" style="background:#0460E0;color:#fff;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:14px 24px;border-radius:999px" style-hover="background:#00AFEF;color:#002963">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>
