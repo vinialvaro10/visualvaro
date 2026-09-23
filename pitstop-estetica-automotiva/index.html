@@ -579,7 +579,7 @@ class Component extends DCLogic {
   }
 
   _setupReveal() {
-    const sel = 'section h1, section h2, section h3, section p, section blockquote footer, section legend, footer p, #hero-actions a';
+    const sel = 'section h1, section h2, section h3, section p, section blockquote footer, section legend, #hero-actions a';
     const nodes = Array.prototype.slice.call(document.querySelectorAll(sel))
       .filter((el) => !el.closest('#nav-links'));
     if (!nodes.length) return;
