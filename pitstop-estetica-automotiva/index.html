@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PitStop Estética Automotiva · Contagem/MG</title>
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<style>
+  @font-face { font-family: 'Strichpunkt Sans'; src: url('assets/fonts/StrichpunktSans-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+  @font-face { font-family: 'Strichpunkt Sans'; src: url('assets/fonts/StrichpunktSans-Medium.ttf') format('truetype'); font-weight: 500; font-display: swap; }
+  @font-face { font-family: 'Strichpunkt Sans'; src: url('assets/fonts/StrichpunktSans-SemiBold.ttf') format('truetype'); font-weight: 600; font-display: swap; }
+  @font-face { font-family: 'Strichpunkt Sans'; src: url('assets/fonts/StrichpunktSans-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+  @font-face { font-family: 'Strichpunkt Expanded'; src: url('assets/fonts/StrichpunktSans_Expanded-Medium.ttf') format('truetype'); font-weight: 400 500; font-display: swap; }
+  @font-face { font-family: 'Strichpunkt Expanded'; src: url('assets/fonts/StrichpunktSans_Expanded-ExtraBold.ttf') format('truetype'); font-weight: 600 700; font-display: swap; }
+  @font-face { font-family: 'Strichpunkt Expanded'; src: url('assets/fonts/StrichpunktSans_Expanded-Black.ttf') format('truetype'); font-weight: 800 900; font-display: swap; }
+  html { scroll-behavior: smooth; }
+  html[data-reveal-ready] [data-reveal="0"] { opacity: 0; transform: translateY(18px); }
+  [data-reveal="1"] { opacity: 1; transform: none; }
+  [data-reveal] { transition: opacity 700ms cubic-bezier(0.22,0.61,0.36,1), transform 700ms cubic-bezier(0.22,0.61,0.36,1); }
+  @media (prefers-reduced-motion: reduce) { [data-reveal] { opacity: 1 !important; transform: none !important; transition: none; } }
+  @media (min-width: 760px) { #cta-title { white-space: nowrap; } }
+  #nav-bars[data-open="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  #nav-bars[data-open="true"] span:nth-child(2) { opacity: 0; }
+  #nav-bars[data-open="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  @media (max-width: 860px) {
+    #nav-toggle { display: flex !important; }
+    #nav-links {
+      position: fixed; top: 0; right: 0; bottom: 0; width: min(78vw, 320px);
+      flex-direction: column; align-items: flex-start; justify-content: center;
+      gap: 26px !important; padding: 32px 30px; font-size: 16px !important;
+      background: #0a0b0c;
+      border-left: 1px solid rgba(244,241,232,0.12);
+      transition: transform 320ms cubic-bezier(0.22,0.61,0.36,1);
+    }
+    #nav-links[data-open="false"] { transform: translateX(105%); pointer-events: none; }
+    #nav-links[data-open="true"] { transform: translateX(0); }
+  }
+  @media (max-width: 760px) {
+    footer[data-screen-label] { text-align: center; }
+    footer[data-screen-label] img { margin-left: auto; margin-right: auto; }
+    footer[data-screen-label] > div > div > p { max-width: none !important; }
+    footer[data-screen-label] p { justify-content: center; }
+    footer[data-screen-label] > div:last-of-type { justify-content: center; }
+    #home {
+      background-image:
+        linear-gradient(180deg, rgba(8,9,10,0.55) 0%, rgba(8,9,10,0.28) 34%, rgba(8,9,10,0.3) 62%, rgba(8,9,10,0.92) 84%, #08090a 100%),
+        url('assets/img/banner-mobile.webp') !important;
+      background-size: cover, 118% auto !important;
+      background-position: center, 42% 34% !important;
+      background-repeat: no-repeat, no-repeat !important;
+      align-items: start !important;
+      min-height: auto !important;
+    }
+    #home-inner { padding: 22px 18px 34px !important; }
+    #hero-copy { text-shadow: 0 2px 18px rgba(8,9,10,0.85); }
+    #hero-block { display: flex; flex-direction: column; }
+    #hero-copy { order: 1; }
+    #hero-badge { order: 2; margin-top: 22px !important; }
+    #hero-actions { order: 3; margin-top: 38vh !important; }
+    #hero-actions a { flex: 1 1 100%; justify-content: center; }
+  }
+  body { margin: 0; background: #08090a; color: #f4f1e8; font-family: 'Strichpunkt Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #f4f1e8; text-decoration: none; }
+  a:hover { color: #ffffff; }
+  input, textarea, button { font-family: inherit; }
+  input::placeholder, textarea::placeholder { color: #5f6367; }
+  ::selection { background: #f4f1e8; color: #08090a; }
+</style>
+</helmet>
+
+<div style="background: #08090a; overflow-x: hidden;">
+
+  <header style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 12px 18px; background: rgba(8,9,10,0.94); border-bottom: 1px solid rgba(244,241,232,0.08);">
+    <a href="#home" style="display: flex; align-items: center;">
+      <img src="assets/logo.png" alt="PitStop Estética Automotiva" style="height: clamp(44px, 8vw, 66px); width: auto; display: block;" />
+    </a>
+    <button id="nav-toggle" type="button" onClick="{{ toggleMenu }}" aria-label="Abrir menu" style="display: none; width: 46px; height: 46px; border-radius: 12px; border: 1px solid rgba(244,241,232,0.22); background: rgba(244,241,232,0.06); cursor: pointer; padding: 0; align-items: center; justify-content: center;">
+      <span id="nav-bars" data-open="{{ menuOpen }}" style="display: grid; gap: 5px;">
+        <span style="display: block; width: 20px; height: 2px; background: #f4f1e8; transition: transform 240ms ease;"></span>
+        <span style="display: block; width: 20px; height: 2px; background: #f4f1e8; transition: opacity 180ms ease;"></span>
+        <span style="display: block; width: 20px; height: 2px; background: #f4f1e8; transition: transform 240ms ease;"></span>
+      </span>
+    </button>
+    <nav id="nav-links" data-open="{{ menuOpen }}" onClick="{{ closeMenu }}" style="display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 14px 22px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 400;">
+      <a href="#servicos" style="color: #cdc9bd;">Serviços</a>
+      <a href="#galeria" style="color: #cdc9bd;">Galeria</a>
+      <a href="#sobre" style="color: #cdc9bd;">Sobre</a>
+      <a href="#feedbacks" style="color: #cdc9bd;">Feedbacks</a>
+      <a href="#localizacao" style="color: #cdc9bd;">Localização</a>
+      <a href="#orcamento" style="padding: 11px 22px; border-radius: 999px; background: linear-gradient(135deg, #25d366, #128c4b); color: #06130c; font-weight: 600; letter-spacing: 0.05em;">Orçamento</a>
+    </nav>
+  </header>
+
+  <section id="home" data-screen-label="Hero" style="position: relative; min-height: min(88vh, 640px); display: grid; align-items: center; background-image: linear-gradient(90deg, rgba(8,9,10,0.97) 0%, rgba(8,9,10,0.86) 38%, rgba(8,9,10,0.25) 70%, rgba(8,9,10,0.55) 100%), url('assets/img/banner.webp'); background-size: cover, cover; background-position: center, 62% center;">
+    <div id="home-inner" style="max-width: 1240px; margin: 0 auto; padding: clamp(56px, 10vw, 90px) 20px; width: 100%;">
+      <div id="hero-block" style="max-width: 620px;">
+        <div id="hero-copy">
+        <p style="margin: 0 0 14px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 13px; letter-spacing: 0.34em; text-transform: uppercase; color: #9a948a;">Contagem · Belo Horizonte</p>
+        <h1 style="margin: 0; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 600; text-transform: uppercase; font-size: clamp(38px, 7.4vw, 64px); line-height: 0.98; letter-spacing: -0.01em; color: #f6f3ea; text-wrap: balance;">
+          Estética<br />automotiva<br />
+          <span style="background: linear-gradient(100deg, #ffffff 10%, #8d8880 95%); -webkit-background-clip: text; background-clip: text; color: transparent;">de alta performance</span>
+        </h1>
+        <p style="margin: 22px 0 0; font-size: 18px; line-height: 1.6; color: #b6b2a8; max-width: 500px;">Vitrificação, polimento técnico e higienização com processo detalhista, produto premium e acabamento de vitrine. Seu carro sai daqui melhor do que saiu da concessionária.</p>
+        </div>
+        <div id="hero-actions" style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px;">
+          <a href="#orcamento" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 30px; border-radius: 999px; background: linear-gradient(135deg, #25d366, #128c4b); color: #06130c; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase;">Fazer um orçamento</a>
+          <a href="#servicos" style="display: inline-flex; align-items: center; padding: 16px 30px; border-radius: 999px; border: 1px solid rgba(244,241,232,0.35); color: #f4f1e8; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 500; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase;">Ver serviços</a>
+        </div>
+        <div id="hero-badge" style="display: inline-flex; align-items: center; gap: 12px; margin-top: 40px; padding: 12px 16px; border: 1px solid rgba(244,241,232,0.12); border-radius: 14px; background: rgba(244,241,232,0.04); width: fit-content; max-width: 100%;">
+          <span style="display: flex; align-items: center; gap: 10px; flex: 0 0 auto;">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="#d8b25c" aria-hidden="true"><path d="M6 2h12v2h3v3a4 4 0 0 1-3.7 3.99A6.02 6.02 0 0 1 13 15.9V18h4v2H7v-2h4v-2.1a6.02 6.02 0 0 1-4.3-4.91A4 4 0 0 1 3 7V4h3V2zm0 4H5v1a2 2 0 0 0 1 1.72V6zm12 0v2.72A2 2 0 0 0 19 7V6h-1z"/></svg>
+            <span style="font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 30px; font-weight: 600; color: #f4f1e8; line-height: 1;">2023</span>
+          </span>
+          <span style="width: 1px; height: 40px; background: rgba(244,241,232,0.18); flex: 0 0 auto;"></span>
+          <span style="font-size: 14px; line-height: 1.5; color: #b6b2a8; text-wrap: balance;">Eleitos os <strong style="color: #f4f1e8; font-weight: 600;">melhores do ano<br />em estética&nbsp;automotiva</strong> no&nbsp;Detailer&nbsp;Fest&nbsp;Brasil.</span>
+          <img src="assets/detailerfest.webp" alt="Detailer Fest Brasil" style="flex: 0 0 auto; width: 46px; height: 46px; object-fit: contain; mix-blend-mode: screen;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" data-screen-label="Serviços" style="position: relative; padding: clamp(60px, 9vw, 104px) 20px calc(clamp(60px, 9vw, 104px) + clamp(36px, 6vw, 90px)); background-color: #1b1d21; background-image: linear-gradient(180deg, rgba(8,9,10,0.9) 0%, rgba(20,22,26,0.74) 50%, rgba(27,29,33,0.97) 100%), url('assets/img/hex.webp'); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <p style="margin: 0 0 12px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(13px, 3.4vw, 12px); letter-spacing: 0.3em; text-transform: uppercase; color: #8d8880;">O que fazemos</p>
+      <h2 style="margin: 0; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 600; text-transform: uppercase; font-size: clamp(34px, 8.4vw, 44px); line-height: 1.03; color: #f6f3ea;">Serviços PitStop</h2>
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px;">
+        <p style="margin: 16px 0 0; max-width: 560px; font-size: clamp(18px, 4.4vw, 17px); line-height: 1.6; color: #a9a59c;">Tudo no mesmo lugar, com mão de obra especializada, produto de qualidade e garantia no serviço.</p>
+        <div style="display: flex; gap: 10px;">
+          <button type="button" onClick="{{ prevSrv }}" aria-label="Serviço anterior" style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(244,241,232,0.25); background: transparent; color: #f4f1e8; font-size: 18px; cursor: pointer;" style-hover="background: rgba(244,241,232,0.1);">‹</button>
+          <button type="button" onClick="{{ nextSrv }}" aria-label="Próximo serviço" style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(244,241,232,0.25); background: transparent; color: #f4f1e8; font-size: 18px; cursor: pointer;" style-hover="background: rgba(244,241,232,0.1);">›</button>
+        </div>
+      </div>
+
+      <div onMouseEnter="{{ pauseSrv }}" onMouseLeave="{{ playSrv }}" style="margin-top: 48px; overflow: hidden;">
+      <div style="display: flex; gap: 20px; transition: transform 700ms cubic-bezier(0.22,0.61,0.36,1); transform: {{ srvTransform }};">
+
+        <article style="flex: 0 0 {{ srvBasis }}; border: 1px solid rgba(244,241,232,0.1); border-radius: 18px; overflow: hidden; background: #15171b;" style-hover="border-color: rgba(244,241,232,0.3);">
+          <img loading="lazy" decoding="async" src="assets/img/vitrificacao.webp" alt="Vitrificação de pintura" style="width: 100%; height: 196px; object-fit: cover; display: block; filter: saturate(0.9);" />
+          <div style="padding: 24px;">
+            <h3 style="margin: 0 0 10px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(23px, 5.6vw, 21px); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #f4f1e8;">Vitrificação</h3>
+            <p style="margin: 0; font-size: clamp(16px, 4vw, 15px); line-height: 1.6; color: #a9a59c;">Camada cerâmica que sela a pintura: brilho profundo, efeito hidrofóbico e proteção por anos contra sol, chuva ácida e sujeira.</p>
+          </div>
+        </article>
+
+        <article style="flex: 0 0 {{ srvBasis }}; border: 1px solid rgba(244,241,232,0.1); border-radius: 18px; overflow: hidden; background: #15171b;" style-hover="border-color: rgba(244,241,232,0.3);">
+          <img loading="lazy" decoding="async" src="assets/img/polimento-geral.webp" alt="Polimento técnico" style="width: 100%; height: 196px; object-fit: cover; display: block;" />
+          <div style="padding: 24px;">
+            <h3 style="margin: 0 0 10px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(23px, 5.6vw, 21px); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #f4f1e8;">Polimento técnico</h3>
+            <p style="margin: 0; font-size: clamp(16px, 4vw, 15px); line-height: 1.6; color: #a9a59c;">Correção de riscos, marcas de lavagem e oxidação em etapas controladas, devolvendo o espelhamento original do verniz.</p>
+          </div>
+        </article>
+
+        <article style="flex: 0 0 {{ srvBasis }}; border: 1px solid rgba(244,241,232,0.1); border-radius: 18px; overflow: hidden; background: #15171b;" style-hover="border-color: rgba(244,241,232,0.3);">
+          <img loading="lazy" decoding="async" src="assets/img/higienizacao.webp" alt="Higienização interna" style="width: 100%; height: 196px; object-fit: cover; display: block;" />
+          <div style="padding: 24px;">
+            <h3 style="margin: 0 0 10px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(23px, 5.6vw, 21px); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #f4f1e8;">Higienização</h3>
+            <p style="margin: 0; font-size: clamp(16px, 4vw, 15px); line-height: 1.6; color: #a9a59c;">Limpeza profunda de bancos, teto, carpete e ar-condicionado. Elimina odores, ácaros e manchas, interior como novo.</p>
+          </div>
+        </article>
+
+        <article style="flex: 0 0 {{ srvBasis }}; border: 1px solid rgba(244,241,232,0.1); border-radius: 18px; overflow: hidden; background: #15171b;" style-hover="border-color: rgba(244,241,232,0.3);">
+          <img loading="lazy" decoding="async" src="assets/img/lavagem.webp" alt="Lavagem técnica detalhada" style="width: 100%; height: 196px; object-fit: cover; object-position: center 45%; display: block;" />
+          <div style="padding: 24px;">
+            <h3 style="margin: 0 0 10px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(23px, 5.6vw, 21px); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #f4f1e8;">Lavagem técnica detalhada</h3>
+            <p style="margin: 0; font-size: clamp(16px, 4vw, 15px); line-height: 1.6; color: #a9a59c;">Descontaminação com dois baldes, pH neutro, clay bar e secagem sem contato. A lavagem que não risca a pintura.</p>
+          </div>
+        </article>
+
+        <article style="flex: 0 0 {{ srvBasis }}; border: 1px solid rgba(244,241,232,0.1); border-radius: 18px; overflow: hidden; background: #15171b;" style-hover="border-color: rgba(244,241,232,0.3);">
+          <img src="assets/reparo-chassi.avif" alt="Limpeza de motor e chassi" style="width: 100%; height: 196px; object-fit: cover; display: block;" />
+          <div style="padding: 24px;">
+            <h3 style="margin: 0 0 10px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(23px, 5.6vw, 21px); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #f4f1e8;">Motor / Chassi</h3>
+            <p style="margin: 0; font-size: clamp(16px, 4vw, 15px); line-height: 1.6; color: #a9a59c;">Desengraxe e revitalização do cofre do motor e da parte de baixo, com proteção das partes elétricas e acabamento seco.</p>
+          </div>
+        </article>
+
+        <article style="flex: 0 0 {{ srvBasis }}; border: 1px solid rgba(244,241,232,0.1); border-radius: 18px; overflow: hidden; background: #15171b;" style-hover="border-color: rgba(244,241,232,0.3);">
+          <img loading="lazy" decoding="async" src="assets/img/polimento-farol.webp" alt="Polimento de farol" style="width: 100%; height: 196px; object-fit: cover; display: block;" />
+          <div style="padding: 24px;">
+            <h3 style="margin: 0 0 10px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(23px, 5.6vw, 21px); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: #f4f1e8;">Polimento de farol</h3>
+            <p style="margin: 0; font-size: clamp(16px, 4vw, 15px); line-height: 1.6; color: #a9a59c;">Remoção do amarelado e da opacidade do policarbonato, com selante UV. Mais iluminação à noite e visual renovado.</p>
+          </div>
+        </article>
+
+      </div>
+      </div>
+      <div style="display: flex; justify-content: center; gap: 8px; margin-top: 30px;">
+        <sc-for list="{{ srvDots }}" as="dot" hint-placeholder-count="4">
+          <button type="button" onClick="{{ dot.go }}" aria-label="Ir para o serviço" style="width: 26px; height: 3px; border: 0; padding: 0; cursor: pointer; background: {{ dot.bg }};"></button>
+        </sc-for>
+      </div>
+    </div>
+    <svg aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none" style="position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: clamp(36px, 6vw, 90px); display: block; pointer-events: none;"><path d="M0 0 L50 100 L100 0 L100 100 L0 100 Z" fill="#08090a"></path></svg>
+  </section>
+
+  <section id="galeria" data-screen-label="Galeria" style="padding: clamp(60px, 9vw, 96px) 0; background: #08090a;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px;">
+      <div>
+        <p style="margin: 0 0 12px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(13px, 3.4vw, 12px); letter-spacing: 0.3em; text-transform: uppercase; color: #8d8880;">Portfólio</p>
+        <h2 style="margin: 0; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 600; text-transform: uppercase; font-size: clamp(34px, 8.4vw, 44px); line-height: 1.03; color: #f6f3ea;">Passou pela PitStop</h2>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <button type="button" onClick="{{ prevSlide }}" aria-label="Anterior" style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(244,241,232,0.25); background: transparent; color: #f4f1e8; font-size: 18px; cursor: pointer;" style-hover="background: rgba(244,241,232,0.1);">‹</button>
+        <button type="button" onClick="{{ nextSlide }}" aria-label="Próxima" style="width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(244,241,232,0.25); background: transparent; color: #f4f1e8; font-size: 18px; cursor: pointer;" style-hover="background: rgba(244,241,232,0.1);">›</button>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; overflow: hidden; padding: 0 20px;">
+      <div onMouseEnter="{{ pauseGal }}" onMouseLeave="{{ playGal }}" style="max-width: 1240px; margin: 0 auto; overflow: hidden;">
+        <div style="display: flex; gap: 18px; transition: transform 700ms cubic-bezier(0.22,0.61,0.36,1); transform: {{ trackTransform }};">
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-12.webp" alt="Ferrari 296 GTB vermelha na fachada da PitStop" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; object-position: center 58%; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-14.webp" alt="McLaren 720S amarela saindo da PitStop" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; object-position: center 62%; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-3.webp" alt="Porsche 911 vermelho na PitStop" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-11.webp" alt="Ford Mustang Dark Horse vermelho na PitStop" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; object-position: center 60%; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-13.webp" alt="BMW X6 M azul na fachada da PitStop" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; object-position: center 62%; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-10.webp" alt="Porsche 911 Cabriolet azul após polimento" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; object-position: center 60%; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-7.webp" alt="Nissan Skyline R34 prata e azul chegando na PitStop" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; object-position: center 55%; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-2.webp" alt="L200 Triton preta espelhada" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-8.webp" alt="Toyota Corolla vermelho na fachada da PitStop" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; object-position: center 60%; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-4.webp" alt="Porsche Taycan branco" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-9.webp" alt="Detalhamento de roda cromada em RAM 2500" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; object-position: center 62%; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-1.webp" alt="Saveiro Cross vermelha na fachada da PitStop" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-6.webp" alt="Aplicação de proteção cerâmica" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; display: block;" />
+          </figure>
+          <figure style="position: relative; margin: 0; flex: 0 0 {{ galBasis }}; border-radius: 16px; overflow: hidden; border: 1px solid rgba(244,241,232,0.1);">
+            <img loading="lazy" decoding="async" src="assets/img/foto-5.webp" alt="Equipe PitStop com Civic vitrificado" style="width: 100%; height: clamp(240px, 42vw, 400px); object-fit: cover; display: block;" />
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 8px; margin-top: 28px;">
+      <sc-for list="{{ slideDots }}" as="dot" hint-placeholder-count="4">
+        <button type="button" onClick="{{ dot.go }}" aria-label="Ir para o slide" style="width: 26px; height: 3px; border: 0; padding: 0; cursor: pointer; background: {{ dot.bg }};"></button>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="sobre" data-screen-label="Sobre" style="padding: clamp(60px, 9vw, 104px) 20px; background-image: linear-gradient(180deg, rgba(8,9,10,0.9) 0%, rgba(18,20,23,0.72) 50%, rgba(11,12,14,0.94) 100%), url('assets/img/hex.webp'); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat;">
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(32px, 5vw, 56px); align-items: center;">
+      <div style="border-radius: 20px; overflow: hidden; border: 1px solid rgba(244,241,232,0.12); background: #0e0f11;">
+        <img loading="lazy" decoding="async" src="assets/img/foto-5.webp" alt="Equipe PitStop Estética Automotiva" style="width: 100%; height: 100%; max-height: 520px; object-fit: cover; display: block;" />
+      </div>
+      <div>
+        <p style="margin: 0 0 12px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(13px, 3.4vw, 12px); letter-spacing: 0.3em; text-transform: uppercase; color: #8d8880;">Saiba mais</p>
+        <h2 style="margin: 0 0 20px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 600; text-transform: uppercase; font-size: clamp(34px, 8.4vw, 44px); line-height: 1.03; color: #f6f3ea;">Sobre nós</h2>
+        <p style="margin: 0 0 16px; font-size: clamp(18px, 4.4vw, 17px); line-height: 1.7; color: #b6b2a8;"><strong style="color: #f4f1e8;">A PitStop Estética Automotiva</strong> é uma oficina de detalhamento em Contagem/MG especializada em proteção e recuperação de pintura: vitrificação, polimento técnico, higienização interna e lavagem detalhada.</p>
+        <p style="margin: 0 0 16px; font-size: clamp(18px, 4.4vw, 17px); line-height: 1.7; color: #b6b2a8;">Do carro usado no dia a dia ao esportivo de coleção, cada veículo recebe uma avaliação cuidadosa e um processo pensado para o seu estado e necessidade. O trabalho é acompanhado de perto, com atenção a cada detalhe, até a entrega nas mãos do cliente: missão cumprida.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin-top: 30px;">
+          <div style="padding: 18px; border-radius: 14px; border: 1px solid rgba(244,241,232,0.12); background: rgba(244,241,232,0.04);">
+            <p style="margin: 0 0 6px; display: flex; align-items: center; gap: 8px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 26px; font-weight: 600; color: #f4f1e8;">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="#d8b25c" aria-hidden="true"><path d="M6 2h12v2h3v3a4 4 0 0 1-3.7 3.99A6.02 6.02 0 0 1 13 15.9V18h4v2H7v-2h4v-2.1a6.02 6.02 0 0 1-4.3-4.91A4 4 0 0 1 3 7V4h3V2zm0 4H5v1a2 2 0 0 0 1 1.72V6zm12 0v2.72A2 2 0 0 0 19 7V6h-1z"/></svg>
+              2023
+            </p>
+            <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #9a948a; text-wrap: balance;">Melhores do ano em estética<br />automotiva no Detailer&nbsp;Fest&nbsp;Brasil</p>
+          </div>
+          <div style="padding: 18px; border-radius: 14px; border: 1px solid rgba(244,241,232,0.12); background: rgba(244,241,232,0.04);">
+            <p style="margin: 0 0 6px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 26px; font-weight: 600; color: #f4f1e8;">6</p>
+            <p style="margin: 0; font-size: 13px; line-height: 1.45; color: #9a948a;">serviços especializados na mesma box</p>
+          </div>
+          <div style="padding: 18px; border-radius: 14px; border: 1px solid rgba(244,241,232,0.12); background: rgba(244,241,232,0.04);">
+            <p style="margin: 0 0 6px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 26px; font-weight: 600; color: #f4f1e8;">Glória</p>
+            <p style="margin: 0; font-size: 13px; line-height: 1.45; color: #9a948a;">Contagem/MG, fácil acesso e estacionamento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedbacks" data-screen-label="Feedbacks" style="padding: clamp(60px, 9vw, 104px) 20px; background: #08090a;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <p style="margin: 0 0 12px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(13px, 3.4vw, 12px); letter-spacing: 0.3em; text-transform: uppercase; color: #8d8880;">Quem já passou aqui</p>
+      <h2 style="margin: 0 0 40px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 600; text-transform: uppercase; font-size: clamp(34px, 8.4vw, 44px); line-height: 1.03; color: #f6f3ea;">Feedbacks dos clientes</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch;">
+        <a href="https://www.google.com/search?q=Pit+Stop+Est%C3%A9tica+Automotiva&amp;ludocid=877169543798503821#lrd=0xa69597560aff0d:0xc2c550d79e6b98d,1,,,," target="_blank" rel="noopener" style="flex: 1 1 260px; max-width: 100%; display: flex; flex-direction: column; justify-content: center; gap: 16px; padding: 36px 30px; border-radius: 26px; background: rgba(244,241,232,0.05); border: 1px solid rgba(244,241,232,0.14); color: #ffffff;" style-hover="border-color: rgba(244,241,232,0.3);">
+          <span style="font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 800; font-size: clamp(28px, 3vw, 34px); letter-spacing: 0.01em; text-transform: uppercase; line-height: 1;">Excelente</span>
+          <span style="color: #fbbc04; font-size: 22px; letter-spacing: 0.14em; line-height: 1;">★★★★★</span>
+          <span style="font-weight: 600; font-size: 16px; color: #d8d4ca;">Avaliações reais dos clientes no Google</span>
+          <span style="font-weight: 500; font-size: 38px; letter-spacing: -0.02em; line-height: 1; font-family: 'Product Sans', Arial, sans-serif;"><span style="color: #4285F4;">G</span><span style="color: #EA4335;">o</span><span style="color: #FBBC05;">o</span><span style="color: #4285F4;">g</span><span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span></span>
+        </a>
+        <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 18px;">
+          <div onMouseEnter="{{ pauseFb }}" onMouseLeave="{{ playFb }}" style="overflow: hidden; border-radius: 22px;">
+            <div style="display: flex; align-items: stretch; gap: 20px; transition: transform 700ms cubic-bezier(0.22,0.61,0.36,1); transform: {{ fbTransform }};">
+          <article style="flex: 0 0 {{ fbBasis }}; display: flex; flex-direction: column; padding: 22px 22px 24px; border-radius: 22px; background: #111214; border: 1px solid rgba(244,241,232,0.06);">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <span style="flex: 0 0 auto; width: 46px; height: 46px; border-radius: 999px; background: #8e5bd6; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: #ffffff;">P</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: grid; gap: 3px; padding-top: 2px;">
+                <span style="font-weight: 700; font-size: 16px; color: #ffffff;">Avaliação Google</span>
+                <span style="font-size: 14px; color: #a9a59c;">há 6 meses</span>
+              </span>
+              <svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"></path><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"></path><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"></path><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"></path></svg>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; margin: 20px 0 14px;">
+              <span style="color: #fbbc04; font-size: 19px; letter-spacing: 0.12em; line-height: 1;">★★★★★</span>
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-label="Verificada"><circle cx="12" cy="12" r="11" fill="#4285F4"></circle><path d="M7 12.4l3.2 3.1L17 8.8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+            <p style="margin: 0 0 22px; flex: 1 1 auto; font-size: 16px; line-height: 1.6; color: #e6e2d8;">Preço compatível com a estrutura e qualidade do serviço prestados. Cada detalhe é pensado visando a satisfação do cliente.</p>
+            <p style="margin: 0; font-weight: 700; font-size: 16px; color: #ffffff;">Patrick Paula</p>
+            <p style="margin: 4px 0 0; font-size: 14px; color: #8d8880;">Local Guide · Google</p>
+          </article>
+          <article style="flex: 0 0 {{ fbBasis }}; display: flex; flex-direction: column; padding: 22px 22px 24px; border-radius: 22px; background: #111214; border: 1px solid rgba(244,241,232,0.06);">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <span style="flex: 0 0 auto; width: 46px; height: 46px; border-radius: 999px; background: #4fb3a0; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: #ffffff;">L</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: grid; gap: 3px; padding-top: 2px;">
+                <span style="font-weight: 700; font-size: 16px; color: #ffffff;">Avaliação Google</span>
+                <span style="font-size: 14px; color: #a9a59c;">há 1 ano</span>
+              </span>
+              <svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"></path><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"></path><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"></path><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"></path></svg>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; margin: 20px 0 14px;">
+              <span style="color: #fbbc04; font-size: 19px; letter-spacing: 0.12em; line-height: 1;">★★★★★</span>
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-label="Verificada"><circle cx="12" cy="12" r="11" fill="#4285F4"></circle><path d="M7 12.4l3.2 3.1L17 8.8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+            <p style="margin: 0 0 22px; flex: 1 1 auto; font-size: 16px; line-height: 1.6; color: #e6e2d8;">Levei meu carro pela primeira vez para lavar, ficou sensacional. Voltei e pedi o polimento, ficou ótimo também, sem detalhes. Pode levar o carro que não tem erro.</p>
+            <p style="margin: 0; font-weight: 700; font-size: 16px; color: #ffffff;">Lucas Pedroso</p>
+            <p style="margin: 4px 0 0; font-size: 14px; color: #8d8880;">Google</p>
+          </article>
+          <article style="flex: 0 0 {{ fbBasis }}; display: flex; flex-direction: column; padding: 22px 22px 24px; border-radius: 22px; background: #111214; border: 1px solid rgba(244,241,232,0.06);">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <span style="flex: 0 0 auto; width: 46px; height: 46px; border-radius: 999px; background: #c9b458; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: #ffffff;">R</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: grid; gap: 3px; padding-top: 2px;">
+                <span style="font-weight: 700; font-size: 16px; color: #ffffff;">Avaliação Google</span>
+                <span style="font-size: 14px; color: #a9a59c;">há 1 ano</span>
+              </span>
+              <svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"></path><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"></path><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"></path><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"></path></svg>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; margin: 20px 0 14px;">
+              <span style="color: #fbbc04; font-size: 19px; letter-spacing: 0.12em; line-height: 1;">★★★★★</span>
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-label="Verificada"><circle cx="12" cy="12" r="11" fill="#4285F4"></circle><path d="M7 12.4l3.2 3.1L17 8.8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+            <p style="margin: 0 0 22px; flex: 1 1 auto; font-size: 16px; line-height: 1.6; color: #e6e2d8;">Levei meu carro para vitrificação e voltou parecendo zero. Explicaram cada etapa e entregaram no prazo combinado.</p>
+            <p style="margin: 0; font-weight: 700; font-size: 16px; color: #ffffff;">Rafael M.</p>
+            <p style="margin: 4px 0 0; font-size: 14px; color: #8d8880;">Google</p>
+          </article>
+          <article style="flex: 0 0 {{ fbBasis }}; display: flex; flex-direction: column; padding: 22px 22px 24px; border-radius: 22px; background: #111214; border: 1px solid rgba(244,241,232,0.06);">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <span style="flex: 0 0 auto; width: 46px; height: 46px; border-radius: 999px; background: #d8745c; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: #ffffff;">J</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: grid; gap: 3px; padding-top: 2px;">
+                <span style="font-weight: 700; font-size: 16px; color: #ffffff;">Avaliação Google</span>
+                <span style="font-size: 14px; color: #a9a59c;">há 1 ano</span>
+              </span>
+              <svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"></path><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"></path><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"></path><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"></path></svg>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; margin: 20px 0 14px;">
+              <span style="color: #fbbc04; font-size: 19px; letter-spacing: 0.12em; line-height: 1;">★★★★★</span>
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-label="Verificada"><circle cx="12" cy="12" r="11" fill="#4285F4"></circle><path d="M7 12.4l3.2 3.1L17 8.8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+            <p style="margin: 0 0 22px; flex: 1 1 auto; font-size: 16px; line-height: 1.6; color: #e6e2d8;">A higienização interna resolveu um cheiro que eu já tinha desistido. Serviço honesto e atendimento de primeira.</p>
+            <p style="margin: 0; font-weight: 700; font-size: 16px; color: #ffffff;">Juliana P.</p>
+            <p style="margin: 4px 0 0; font-size: 14px; color: #8d8880;">Google</p>
+          </article>
+          <article style="flex: 0 0 {{ fbBasis }}; display: flex; flex-direction: column; padding: 22px 22px 24px; border-radius: 22px; background: #111214; border: 1px solid rgba(244,241,232,0.06);">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <span style="flex: 0 0 auto; width: 46px; height: 46px; border-radius: 999px; background: #5b8fd6; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; color: #ffffff;">D</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: grid; gap: 3px; padding-top: 2px;">
+                <span style="font-weight: 700; font-size: 16px; color: #ffffff;">Avaliação Google</span>
+                <span style="font-size: 14px; color: #a9a59c;">há 2 anos</span>
+              </span>
+              <svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"></path><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"></path><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"></path><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"></path></svg>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; margin: 20px 0 14px;">
+              <span style="color: #fbbc04; font-size: 19px; letter-spacing: 0.12em; line-height: 1;">★★★★★</span>
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-label="Verificada"><circle cx="12" cy="12" r="11" fill="#4285F4"></circle><path d="M7 12.4l3.2 3.1L17 8.8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+            <p style="margin: 0 0 22px; flex: 1 1 auto; font-size: 16px; line-height: 1.6; color: #e6e2d8;">Polimento técnico impecável, tiraram riscos que nenhuma outra oficina quis encarar. Único lugar onde deixo meu carro.</p>
+            <p style="margin: 0; font-weight: 700; font-size: 16px; color: #ffffff;">Diego A.</p>
+            <p style="margin: 4px 0 0; font-size: 14px; color: #8d8880;">Google</p>
+          </article>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+            <div style="display: flex; gap: 8px;">
+              <sc-for list="{{ fbDots }}" as="dot" hint-placeholder-count="3">
+                <button type="button" onClick="{{ dot.go }}" aria-label="Ir para a avaliação" style="width: 26px; height: 3px; border: 0; padding: 0; cursor: pointer; background: {{ dot.bg }};"></button>
+              </sc-for>
+            </div>
+            <div style="display: flex; gap: 10px;">
+              <button type="button" onClick="{{ prevFb }}" aria-label="Avaliação anterior" style="width: 46px; height: 46px; border-radius: 999px; border: 1px solid rgba(244,241,232,0.25); background: rgba(244,241,232,0.06); color: #f4f1e8; font-size: 18px; cursor: pointer;" style-hover="background: rgba(244,241,232,0.14);">‹</button>
+              <button type="button" onClick="{{ nextFb }}" aria-label="Próxima avaliação" style="width: 46px; height: 46px; border-radius: 999px; border: 1px solid rgba(244,241,232,0.25); background: rgba(244,241,232,0.06); color: #f4f1e8; font-size: 18px; cursor: pointer;" style-hover="background: rgba(244,241,232,0.14);">›</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 40px;">
+        <a href="https://www.google.com/search?q=Pit+Stop+Est%C3%A9tica+Automotiva&amp;ludocid=877169543798503821#lrd=0xa69597560aff0d:0xc2c550d79e6b98d,1,,,," target="_blank" rel="noopener" style="padding: 15px 30px; border-radius: 999px; border: 1px solid rgba(244,241,232,0.25); font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase;">Veja todas as nossas avaliações</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="localizacao" data-screen-label="Localização" style="padding: clamp(60px, 9vw, 104px) 20px; background: linear-gradient(180deg, #f4f1e8, #ded9cc); color: #101214;">
+    <div style="max-width: 1240px; margin: 0 auto; text-align: center;">
+      <p style="margin: 0 0 12px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(13px, 3.4vw, 12px); letter-spacing: 0.3em; text-transform: uppercase; color: #6b6a63;">Localização</p>
+      <h2 id="cta-title" style="margin: 0 auto; max-width: 100%; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 600; text-transform: uppercase; font-size: clamp(22px, 3.4vw, 44px); line-height: 1.08; white-space: normal; text-wrap: balance; color: #101214;">Traga o carro, avaliamos junto com você</h2>
+      <p style="margin: 18px auto 0; max-width: 560px; font-size: clamp(18px, 4.4vw, 17px); line-height: 1.6; color: #4a4a46;">R. Felisberta Francisca de Carvalho, 451, Bairro da Glória, Contagem/MG · 32340-050</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 28px;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=R.+Felisberta+Francisca+de+Carvalho,+451+-+Gl%C3%B3ria,+Contagem+-+MG,+32340-050" target="_blank" rel="noopener" style="padding: 15px 30px; border-radius: 999px; background: #101214; color: #f4f1e8; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase;">Abrir no Google Maps</a>
+        <a href="#orcamento" style="padding: 15px 30px; border-radius: 999px; border: 1px solid rgba(16,18,20,0.3); color: #101214; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase;">Pedir orçamento</a>
+      </div>
+      <div style="margin-top: 44px; border-radius: 20px; overflow: hidden; border: 1px solid rgba(16,18,20,0.15); background: #cfcabd;">
+        <iframe title="Mapa da PitStop Estética Automotiva" src="https://www.google.com/maps?q=R.%20Felisberta%20Francisca%20de%20Carvalho%2C%20451%20-%20Gl%C3%B3ria%2C%20Contagem%20-%20MG%2C%2032340-050&amp;output=embed" style="width: 100%; height: clamp(260px, 44vw, 420px); border: 0; display: block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="orcamento" data-screen-label="Orçamento" style="padding: clamp(60px, 9vw, 104px) 20px; background: linear-gradient(180deg, #0b0c0e, #16181c);">
+    <div style="max-width: 720px; margin: 0 auto; text-align: center;">
+      <p style="margin: 0 0 12px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: clamp(13px, 3.4vw, 12px); letter-spacing: 0.3em; text-transform: uppercase; color: #8d8880;">Orçamento</p>
+      <h2 style="margin: 0 0 14px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 600; text-transform: uppercase; font-size: clamp(34px, 8.4vw, 44px); line-height: 1.03; color: #f6f3ea;">Monte seu orçamento</h2>
+      <p style="margin: 0 0 40px; font-size: clamp(18px, 4.4vw, 17px); line-height: 1.6; color: #a9a59c;">Selecione os serviços que você precisa que retornaremos assim que possível.</p>
+    </div>
+
+    <form ref="{{ formRef }}" onSubmit="{{ enviarOrcamento }}" style="max-width: 720px; margin: 0 auto; padding: clamp(20px, 4vw, 34px); border-radius: 20px; border: 1px solid rgba(244,241,232,0.12); background: rgba(244,241,232,0.04); display: grid; gap: 22px;">
+      <label style="display: grid; gap: 8px; text-align: left;">
+        <span style="font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #9a948a;">Seu nome</span>
+        <input name="nome" type="text" placeholder="Como podemos te chamar?" style="padding: 15px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.16); background: #0d0e10; color: #f4f1e8; font-size: 16px;" />
+      </label>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px;">
+        <label style="display: grid; gap: 8px; text-align: left;">
+          <span style="font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #9a948a;">Veículo</span>
+          <input name="veiculo" type="text" placeholder="Marca e modelo" style="padding: 15px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.16); background: #0d0e10; color: #f4f1e8; font-size: 16px;" />
+        </label>
+        <label style="display: grid; gap: 8px; text-align: left;">
+          <span style="font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #9a948a;">Cor da pintura</span>
+          <input name="cor" type="text" placeholder="Ex.: preto metálico" style="padding: 15px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.16); background: #0d0e10; color: #f4f1e8; font-size: 16px;" />
+        </label>
+      </div>
+      <fieldset style="border: 0; padding: 0; margin: 0; display: grid; gap: 12px; text-align: left;">
+        <legend style="padding: 0; margin: 0 0 4px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #9a948a;">Serviços que você precisa</legend>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px;">
+          <label style="display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.14); background: #0d0e10; font-size: 15px; color: #cdc9bd; cursor: pointer;">
+            <input name="servicos" type="checkbox" value="Vitrificação" style="width: 17px; height: 17px; accent-color: #f4f1e8;" /> Vitrificação
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.14); background: #0d0e10; font-size: 15px; color: #cdc9bd; cursor: pointer;">
+            <input name="servicos" type="checkbox" value="Polimento técnico" style="width: 17px; height: 17px; accent-color: #f4f1e8;" /> Polimento técnico
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.14); background: #0d0e10; font-size: 15px; color: #cdc9bd; cursor: pointer;">
+            <input name="servicos" type="checkbox" value="Higienização" style="width: 17px; height: 17px; accent-color: #f4f1e8;" /> Higienização
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.14); background: #0d0e10; font-size: 15px; color: #cdc9bd; cursor: pointer;">
+            <input name="servicos" type="checkbox" value="Lavagem técnica detalhada" style="width: 17px; height: 17px; accent-color: #f4f1e8;" /> Lavagem técnica detalhada
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.14); background: #0d0e10; font-size: 15px; color: #cdc9bd; cursor: pointer;">
+            <input name="servicos" type="checkbox" value="Motor / Chassi" style="width: 17px; height: 17px; accent-color: #f4f1e8;" /> Motor / Chassi
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.14); background: #0d0e10; font-size: 15px; color: #cdc9bd; cursor: pointer;">
+            <input name="servicos" type="checkbox" value="Polimento de farol" style="width: 17px; height: 17px; accent-color: #f4f1e8;" /> Polimento de farol
+          </label>
+        </div>
+      </fieldset>
+      <label style="display: grid; gap: 8px; text-align: left;">
+        <span style="font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #9a948a;">Observações <span style="color: #6b6a63;">(opcional)</span></span>
+        <textarea name="obs" rows="4" placeholder="Conte o que você quer resolver, prazo, dúvidas..." style="padding: 15px 16px; border-radius: 10px; border: 1px solid rgba(244,241,232,0.16); background: #0d0e10; color: #f4f1e8; font-size: 16px; resize: vertical;"></textarea>
+      </label>
+      <button type="submit" style="padding: 18px 26px; border: 0; border-radius: 999px; background: linear-gradient(135deg, #25d366, #128c4b); color: #06130c; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer;">Enviar no WhatsApp</button>
+      <p style="margin: 0; text-align: center; font-size: 13px; color: #6b6a63;">Sem compromisso, respondemos em horário comercial.</p>
+    </form>
+  </section>
+
+  <footer data-screen-label="Rodapé" style="padding: clamp(52px, 8vw, 72px) 20px 32px; background: #08090a; border-top: 1px solid rgba(244,241,232,0.1);">
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px;">
+      <div>
+        <img src="assets/logo.png" alt="PitStop Estética Automotiva" style="height: 54px; width: auto; display: block;" />
+        <p style="margin: 18px 0 0; font-size: 14px; line-height: 1.6; color: #77746d; max-width: 260px;">Estética automotiva premium em Contagem/MG. Eleitos os melhores do ano em 2023 no Detailer Fest Brasil.</p>
+      </div>
+      <div>
+        <p style="margin: 0 0 14px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #9a948a;">Horário</p>
+        <p style="margin: 0 0 6px; font-size: 15px; color: #cdc9bd;">Segunda a sexta · 08h às 18h</p>
+        <p style="margin: 0 0 6px; font-size: 15px; color: #cdc9bd;">Sábado · 08h às 13h</p>
+        <p style="margin: 0; font-size: 15px; color: #77746d;">Domingo · fechado</p>
+      </div>
+      <div>
+        <p style="margin: 0 0 14px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #9a948a;">Contato</p>
+        <p style="margin: 0 0 6px; font-size: 15px; color: #cdc9bd;">R. Felisberta Francisca de Carvalho, 451</p>
+        <p style="margin: 0 0 6px; font-size: 15px; color: #cdc9bd;">Bairro da Glória · Contagem/MG</p>
+        <p style="margin: 10px 0 8px; font-size: 15px;"><a href="{{ whatsLink }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #f4f1e8;"><img src="assets/img/whatsapp.png" alt="" style="width: 24px; height: 24px; display: block; border-radius: 999px;" />(31) 98554-7682</a></p>
+        <p style="margin: 0; font-size: 15px;"><a href="https://www.instagram.com/pitstopservicos" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #f4f1e8;"><img src="assets/img/instagram.webp" alt="" style="width: 24px; height: 24px; display: block; border-radius: 7px;" />@pitstopservicos</a></p>
+      </div>
+      <div>
+        <p style="margin: 0 0 14px; font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #9a948a;">Serviços</p>
+        <p style="margin: 0 0 6px; font-size: 15px; color: #cdc9bd;">Vitrificação · Polimento técnico</p>
+        <p style="margin: 0 0 6px; font-size: 15px; color: #cdc9bd;">Higienização · Lavagem detalhada</p>
+        <p style="margin: 0; font-size: 15px; color: #cdc9bd;">Motor/Chassi · Polimento de farol</p>
+      </div>
+    </div>
+    <div style="max-width: 1240px; margin: 48px auto 0; padding-top: 24px; border-top: 1px solid rgba(244,241,232,0.08); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;">
+      <p style="margin: 0; font-size: 13px; color: #5f5d58;">© 2026 PitStop Estética Automotiva · todos os direitos reservados.</p>
+      <p style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 13px; color: #5f5d58;">Site criado por <a href="https://www.linklist.bio/vinealvaro" target="_blank" rel="noopener" aria-label="visualvaro design" style="display: inline-flex; align-items: center; opacity: 0.85;" style-hover="opacity: 1;"><img src="assets/visualvaro-logo.svg?v=2" alt="visualvaro design" style="height: 15px; width: auto; display: block;" /></a></p>
+    </div>
+  </footer>
+
+  <a href="https://www.instagram.com/pitstopservicos" target="_blank" rel="noopener" aria-label="Instagram da PitStop" style="position: fixed; right: 30px; bottom: 94px; z-index: 60; width: 44px; height: 44px; border-radius: 12px; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: transform 200ms ease;" style-hover="transform: scale(1.07);"><img src="assets/img/instagram.webp" alt="" style="width: 100%; height: 100%; display: block; border-radius: 12px;" /></a>
+  <a href="{{ whatsLink }}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="position: fixed; right: 22px; bottom: 22px; z-index: 60; width: 60px; height: 60px; border-radius: 999px; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: transform 200ms ease;" style-hover="transform: scale(1.07);"><img src="assets/img/whatsapp.png" alt="" style="width: 100%; height: 100%; display: block;" /></a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5531985547682&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contato&quot;},&quot;autoplayGaleria&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Galeria&quot;}}">
+class Component extends DCLogic {
+  state = { slide: 0, srv: 0, fb: 0, menu: false };
+
+  get perFb() {
+    const w = typeof window !== 'undefined' ? window.innerWidth : 1200;
+    return w < 760 ? 1 : w < 1180 ? 2 : 3;
+  }
+  get maxFb() { return Math.max(0, 5 - this.perFb); }
+
+  goFb(i) {
+    const max = this.maxFb;
+    this.setState({ fb: i > max ? 0 : i < 0 ? max : i });
+  }
+
+  get total() { return 14; }
+  get perView() {
+    const w = typeof window !== 'undefined' ? window.innerWidth : 1200;
+    return w < 720 ? 1 : w < 1080 ? 2 : 3;
+  }
+  get maxSlide() { return Math.max(0, this.total - this.perView); }
+
+  componentDidMount() {
+    this._setupReveal();
+    this._onResize = () => this.forceUpdate();
+    window.addEventListener('resize', this._onResize);
+    if (this.props.autoplayGaleria !== false) {
+      this._timer = setInterval(() => { if (!this._pauseGal) this.go(this.state.slide + 1); }, 4500);
+      this._timerSrv = setInterval(() => { if (!this._pauseSrv) this.goSrv(this.state.srv + 1); }, 5200);
+      this._timerFb = setInterval(() => { if (!this._pauseFb) this.goFb(this.state.fb + 1); }, 6000);
+    }
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._onResize);
+    if (this._timer) clearInterval(this._timer);
+    if (this._timerSrv) clearInterval(this._timerSrv);
+    if (this._timerFb) clearInterval(this._timerFb);
+    if (this._io) this._io.disconnect();
+    if (this._revealPoll) clearInterval(this._revealPoll);
+    if (this._onScrollReveal) {
+      window.removeEventListener('scroll', this._onScrollReveal);
+      window.removeEventListener('load', this._onScrollReveal);
+    }
+  }
+
+  go(i) {
+    const max = this.maxSlide;
+    const next = i > max ? 0 : i < 0 ? max : i;
+    this.setState({ slide: next });
+  }
+
+  _setupReveal() {
+    const sel = 'section h1, section h2, section h3, section p, section blockquote footer, section legend, footer p, #hero-actions a';
+    const nodes = Array.prototype.slice.call(document.querySelectorAll(sel))
+      .filter((el) => !el.closest('#nav-links'));
+    if (!nodes.length) return;
+
+    const show = (el) => {
+      if (el.getAttribute('data-reveal') === '1') return;
+      const i = Array.prototype.slice.call(el.parentNode.children).indexOf(el);
+      el.style.transitionDelay = Math.min(i, 5) * 70 + 'ms';
+      el.setAttribute('data-reveal', '1');
+    };
+    const showAll = () => nodes.forEach(show);
+    this._revealShowAll = showAll;
+
+    if (!window.IntersectionObserver) return;
+
+    nodes.forEach((el) => el.setAttribute('data-reveal', '0'));
+    document.documentElement.setAttribute('data-reveal-ready', '');
+
+    let fired = false;
+    const io = new IntersectionObserver((entries) => {
+      fired = true;
+      entries.forEach((e) => { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+    nodes.forEach((el) => io.observe(el));
+    this._io = io;
+
+    // revela na hora o que já está na tela
+    const inView = () => {
+      const vh = window.innerHeight || 800;
+      nodes.forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.96 && r.bottom > 0) show(el);
+      });
+    };
+    requestAnimationFrame(inView);
+    this._onScrollReveal = inView;
+    window.addEventListener('scroll', inView, { passive: true });
+    window.addEventListener('load', inView);
+    // polling por rect: funciona mesmo quando quem rola é o host (preview) e o IO/scroll não emitem
+    this._revealPoll = setInterval(() => {
+      inView();
+      if (!nodes.some((el) => el.getAttribute('data-reveal') === '0')) {
+        clearInterval(this._revealPoll);
+        this._revealPoll = null;
+      }
+    }, 250);
+    void fired;
+  }
+
+  get maxSrv() { return Math.max(0, 6 - this.perView); }
+
+  goSrv(i) {
+    const max = this.maxSrv;
+    const next = i > max ? 0 : i < 0 ? max : i;
+    this.setState({ srv: next });
+  }
+
+  renderVals() {
+    const per = this.perView;
+    const step = 100 / per;
+    const offset = this.state.slide * step;
+    const dots = [];
+    for (let i = 0; i <= this.maxSlide; i++) {
+      dots.push({
+        bg: i === this.state.slide ? '#f4f1e8' : 'rgba(244,241,232,0.25)',
+        go: () => this.go(i),
+      });
+    }
+    const fone = (this.props.whatsapp || '5531985547682').replace(/\D/g, '');
+    const srvDots = [];
+    for (let i = 0; i <= this.maxSrv; i++) {
+      srvDots.push({
+        bg: i === this.state.srv ? '#f4f1e8' : 'rgba(244,241,232,0.25)',
+        go: () => this.goSrv(i),
+      });
+    }
+    const open = this.state.menu;
+    const fbDots = [];
+    for (let i = 0; i <= this.maxFb; i++) {
+      fbDots.push({ bg: i === this.state.fb ? '#f4f1e8' : 'rgba(244,241,232,0.25)', go: () => this.goFb(i) });
+    }
+    return {
+      fbBasis: 'calc((100% - ' + (this.perFb - 1) * 20 + 'px) / ' + this.perFb + ')',
+      fbTransform: 'translateX(calc(-' + (this.state.fb * 100 / this.perFb) + '% - ' + (this.state.fb * 20) + 'px))',
+      fbDots: fbDots,
+      prevFb: () => this.goFb(this.state.fb - 1),
+      nextFb: () => this.goFb(this.state.fb + 1),
+      pauseFb: () => { this._pauseFb = true; },
+      playFb: () => { this._pauseFb = false; },
+      menuOpen: open ? 'true' : 'false',
+      toggleMenu: () => this.setState((s) => ({ menu: !s.menu })),
+      closeMenu: () => { if (this.state.menu) this.setState({ menu: false }); },
+      srvBasis: 'calc((100% - ' + (per - 1) * 20 + 'px) / ' + per + ')',
+      galBasis: 'calc((100% - ' + (per - 1) * 18 + 'px) / ' + per + ')',
+      srvTransform: 'translateX(calc(-' + (this.state.srv * step) + '% - ' + (this.state.srv * 20) + 'px))',
+      srvDots: srvDots,
+      prevSrv: () => this.goSrv(this.state.srv - 1),
+      nextSrv: () => this.goSrv(this.state.srv + 1),
+      pauseSrv: () => { this._pauseSrv = true; },
+      playSrv: () => { this._pauseSrv = false; },
+      pauseGal: () => { this._pauseGal = true; },
+      playGal: () => { this._pauseGal = false; },
+      trackTransform: 'translateX(calc(-' + offset + '% - ' + (this.state.slide * 18) + 'px))',
+      slideDots: dots,
+      prevSlide: () => this.go(this.state.slide - 1),
+      nextSlide: () => this.go(this.state.slide + 1),
+      whatsLink: 'https://wa.me/' + fone,
+      formRef: (el) => { this._form = el; },
+      enviarOrcamento: (e) => {
+        e.preventDefault();
+        const f = this._form;
+        if (!f) return;
+        const d = new FormData(f);
+        const servicos = d.getAll('servicos');
+        const linhas = [
+          'Olá, PitStop! Quero um orçamento.',
+          '',
+          'Nome: ' + (d.get('nome') || '-'),
+          'Veículo: ' + (d.get('veiculo') || '-'),
+          'Cor: ' + (d.get('cor') || '-'),
+          'Serviços: ' + (servicos.length ? servicos.join(', ') : 'a definir'),
+        ];
+        const obs = (d.get('obs') || '').toString().trim();
+        if (obs) linhas.push('Observações: ' + obs);
+        window.open('https://wa.me/' + fone + '?text=' + encodeURIComponent(linhas.join('\n')), '_blank');
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>
