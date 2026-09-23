@@ -51,12 +51,9 @@
     footer[data-screen-label] p { justify-content: center; }
     footer[data-screen-label] > div:last-of-type { justify-content: center; }
     #home {
-      background-image:
-        linear-gradient(180deg, rgba(8,9,10,0.55) 0%, rgba(8,9,10,0.28) 34%, rgba(8,9,10,0.3) 62%, rgba(8,9,10,0.92) 84%, #08090a 100%),
-        url('assets/img/banner-mobile.webp') !important;
-      background-size: cover, 118% auto !important;
-      background-position: center, 42% 34% !important;
-      background-repeat: no-repeat, no-repeat !important;
+      background-image: radial-gradient(ellipse at 50% 62%, #2a2c30 0%, #141518 45%, #08090a 80%) !important;
+      background-size: cover !important;
+      background-position: center !important;
       align-items: start !important;
       min-height: auto !important;
     }
@@ -65,7 +62,8 @@
     #hero-block { display: flex; flex-direction: column; }
     #hero-copy { order: 1; }
     #hero-badge { order: 2; margin-top: 22px !important; }
-    #hero-actions { order: 3; margin-top: 38vh !important; }
+    #hero-car { order: 3; display: block !important; }
+    #hero-actions { order: 4; margin-top: 6px !important; }
     #hero-actions a { flex: 1 1 100%; justify-content: center; }
   }
   body { margin: 0; background: #08090a; color: #f4f1e8; font-family: 'Strichpunkt Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
@@ -122,9 +120,10 @@
             <span style="font-family: 'Strichpunkt Expanded', 'Strichpunkt Sans', sans-serif; font-size: 30px; font-weight: 600; color: #f4f1e8; line-height: 1;">2023</span>
           </span>
           <span style="width: 1px; height: 40px; background: rgba(244,241,232,0.18); flex: 0 0 auto;"></span>
-          <span style="font-size: 14px; line-height: 1.5; color: #b6b2a8; text-wrap: balance;">Eleitos os <strong style="color: #f4f1e8; font-weight: 600;">melhores do ano<br />em estética&nbsp;automotiva</strong> no&nbsp;Detailer&nbsp;Fest&nbsp;Brasil.</span>
+          <span style="font-size: 14px; line-height: 1.5; color: #b6b2a8; text-wrap: balance;">Eleitos os <strong style="color: #f4f1e8; font-weight: 600;">melhores do ano<br />em&nbsp;estética automotiva</strong> no&nbsp;Detailer&nbsp;Fest&nbsp;Brasil.</span>
           <img src="assets/detailerfest.webp" alt="Detailer Fest Brasil" style="flex: 0 0 auto; width: 46px; height: 46px; object-fit: contain; mix-blend-mode: screen;" />
         </div>
+        <div id="hero-car" aria-hidden="true" style="display: none; width: calc(100% + 36px); margin: 18px -18px 0; aspect-ratio: 2 / 1; background-image: url('assets/img/banner-mobile.webp'); background-size: 100% auto; background-position: center 60%; background-repeat: no-repeat; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 80%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 80%, transparent 100%);"></div>
       </div>
     </div>
   </section>
@@ -516,9 +515,9 @@
         <p style="margin: 0; font-size: 15px; color: #cdc9bd;">Motor/Chassi · Polimento de farol</p>
       </div>
     </div>
-    <div style="max-width: 1240px; margin: 48px auto 0; padding-top: 24px; border-top: 1px solid rgba(244,241,232,0.08); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;">
+    <div style="max-width: 1240px; margin: 48px auto 0; padding-top: 24px; border-top: 1px solid rgba(244,241,232,0.08); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center;">
       <p style="margin: 0; font-size: 13px; color: #5f5d58;">© 2026 PitStop Estética Automotiva · todos os direitos reservados.</p>
-      <p style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 13px; color: #5f5d58;">Site criado por <a href="https://www.linklist.bio/vinealvaro" target="_blank" rel="noopener" aria-label="visualvaro design" style="display: inline-flex; align-items: center; opacity: 0.85;" style-hover="opacity: 1;"><img src="assets/visualvaro-logo.svg?v=2" alt="visualvaro design" style="height: 15px; width: auto; display: block;" /></a></p>
+      <a href="https://visualvaro.com.br" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-size: 13px; color: #8d8880;" style-hover="color: #f4f1e8;">Site desenvolvido por <img src="assets/visualvaro-logo.svg?v=2" alt="visualvaro" style="height: 15px; width: auto; display: block;" /> <span style="color: #cdc9bd; font-weight: 600;">visualvaro.com.br</span></a>
     </div>
   </footer>
 
