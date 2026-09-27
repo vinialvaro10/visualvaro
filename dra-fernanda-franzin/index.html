@@ -52,8 +52,8 @@ button{font-family:inherit}
 
 /* header */
 .hdr{position:sticky;top:0;z-index:50;background:rgba(51,50,49,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
-.hdr-in{max-width:1280px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.hdr-logo img{height:76px;width:auto}
+.hdr-in{max-width:1280px;margin:0 auto;padding:8px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.hdr-logo img{height:60px;width:auto}
 .nav{display:flex;gap:32px;align-items:center;flex-wrap:wrap;justify-content:center}
 .nav a{color:#fff;font-size:15px}
 .nav a:hover{color:var(--gold-l)}
@@ -67,7 +67,8 @@ button{font-family:inherit}
 /* hero */
 .hero{position:relative;background:#EAE2D7;overflow:hidden}
 .hero-media{position:absolute;inset:0}
-.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-media picture{display:block;width:100%;height:100%}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center top}
 .hero-fade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(236,230,221,.55) 0%,rgba(236,230,221,.2) 35%,rgba(236,230,221,0) 45%)}
 .hero-in{position:relative;width:100%;aspect-ratio:2.4/1;min-height:560px;max-height:820px;display:flex;align-items:center}
 .hero-txt{position:relative;max-width:1200px;width:100%;margin:0 auto;padding:60px 24px}
@@ -143,7 +144,7 @@ button{font-family:inherit}
 .card-b small{color:var(--muted);font-size:14px;line-height:1.5}
 .card-b small b{color:var(--text);font-weight:500}
 
-.cta{max-width:1140px;margin:20px auto 0;border-radius:10px;background:linear-gradient(100deg,#C9AE88 0%,#9C7A52 45%,#6B5646 100%);padding:40px clamp(24px,8vw,110px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:30px;align-items:center}
+.cta{max-width:1140px;margin:20px auto 0;border-radius:10px;background:linear-gradient(100deg,#C9AE88 0%,#A6835A 55%,#9C7A52 100%);padding:40px clamp(24px,8vw,110px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:30px;align-items:center}
 .cta h2{color:#fff;font-weight:400;font-size:clamp(34px,3.4vw,44px);line-height:1.1;text-wrap:balance}
 .cta-r{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
 .cta-r p{color:#fff;font-size:16px;line-height:1.5;font-weight:300;text-wrap:pretty}
@@ -209,7 +210,7 @@ button{font-family:inherit}
 
 /* footer */
 .ftr{background:var(--ink);padding:30px 24px 110px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
-.ftr-logo{height:130px;width:auto}
+.ftr-logo{height:96px;width:auto}
 .ftr-name{color:#fff;font-size:18px;font-weight:500}
 .ftr-sub{color:var(--gold-l);font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
 .ftr-tag{color:rgba(255,255,255,.75);font-size:14px;font-weight:300;margin-top:10px}
@@ -225,9 +226,9 @@ button{font-family:inherit}
 /* floating */
 .fl{position:fixed;z-index:60;transition:transform .2s ease}
 .fl:hover{transform:scale(1.08)}
-.fl-sq{right:29px;width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.25)}
-.fl-maps{bottom:148px}.fl-maps img{width:26px;height:26px}
-.fl-waze{bottom:94px}.fl-waze img{width:100%;height:100%}
+.fl-sq{right:36px;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#fff;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.fl-maps{bottom:124px}.fl-maps img{width:17px;height:17px}
+.fl-waze{bottom:88px}.fl-waze img{width:100%;height:100%}
 .fl-wa{right:22px;bottom:22px;width:60px;height:60px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
 .fl-wa img{width:100%;height:100%}
 
@@ -237,7 +238,9 @@ button{font-family:inherit}
 @media (max-width:999px){
   .hero-in{aspect-ratio:auto;min-height:0;max-height:none;display:block}
   .hero-media{position:relative;inset:auto;width:100%;max-width:520px;margin:0 auto;aspect-ratio:680/749}
-  .hero-media::after{content:"";position:absolute;left:0;right:0;bottom:0;height:30%;background:linear-gradient(180deg,rgba(234,226,215,0) 0%,#EAE2D7 100%)}
+  .hero-media::after{display:none}
+  .hero-media picture{-webkit-mask-image:linear-gradient(180deg,#000 62%,transparent 100%);mask-image:linear-gradient(180deg,#000 62%,transparent 100%)}
+  .hero-media img{animation:none}
   .hero-fade{display:none}
   .hero-txt{padding:8px 24px 56px;max-width:680px}
   .hero-box{max-width:100%;gap:22px;align-items:center;text-align:center}
@@ -248,6 +251,9 @@ button{font-family:inherit}
 }
 /* ≤ 959px: mobile */
 @media (max-width:959px){
+  .hdr-logo img{height:52px}
+  .menu-btn{width:42px;height:42px;font-size:20px}
+  .ftr-logo{height:84px}
   .nav,.hdr-in>.btn{display:none}
   .menu-btn{display:block}
   .sobre{padding-top:80px}
@@ -264,6 +270,12 @@ button{font-family:inherit}
   .arc{border-radius:80px 80px 0 0}
 }
 @media (max-width:560px){
+  .fl-sq{right:25px;width:26px;height:26px;border-radius:7px}
+  .fl-maps{bottom:106px}.fl-maps img{width:15px;height:15px}
+  .fl-waze{bottom:74px}
+  .fl-wa{right:14px;bottom:16px;width:52px;height:52px}
+  .hero-txt{padding-left:20px;padding-right:20px}
+  .hero h1{font-size:30px}
   .consult{height:220px}
   .sobre-txt{padding:0}
   .forma{padding:32px 18px}
@@ -283,7 +295,7 @@ button{font-family:inherit}
 .hero-media img{animation:heroZoom 14s ease-out both}
 @keyframes heroZoom{from{transform:scale(1.06)}to{transform:scale(1)}}
 .js .hero-box>*{opacity:0;transform:translateY(16px);animation:heroIn .9s cubic-bezier(.2,.7,.2,1) forwards}
-.js .hero-box>*:nth-child(1){animation-delay:.1s}.js .hero-box>*:nth-child(2){animation-delay:.22s}.js .hero-box>*:nth-child(3){animation-delay:.34s}.js .hero-box>*:nth-child(4){animation-delay:.46s}
+.js .hero-box>*:nth-child(1){animation-delay:.1s}.js .hero-box>*:nth-child(2){animation-delay:.22s}.js .hero-box>*:nth-child(3){animation-delay:.34s}
 @keyframes heroIn{to{opacity:1;transform:none}}
 .card,.dif,.rv,.unit,.faq-card{transition:transform .35s ease,box-shadow .35s ease}
 .card:hover,.dif:hover,.unit:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(107,86,70,.14)}
@@ -338,7 +350,6 @@ button{font-family:inherit}
     <div class="hero-fade"></div>
     <div class="hero-txt">
       <div class="hero-box">
-        <div class="hero-tag">Cuidado médico, sem complicação</div>
         <h1>Sua pele merece ser cuidada por inteiro</h1>
         <p>Dermatologia e estética com um olhar individual para você, sua pele e aquilo que realmente faz sentido para o seu momento.</p>
         <div class="hero-ctas">
@@ -355,7 +366,6 @@ button{font-family:inherit}
     <div class="sobre-txt">
       <h2 class="h2">Quem está por trás do seu cuidado</h2>
       <p>Eu sou a <strong>Dra. Fernanda Franzin</strong>, médica apaixonada por dermatologia e pelo cuidado com a pele.</p>
-      <p>Acredito que cada pessoa tem uma pele, uma rotina e uma história diferente. Por isso, antes de pensar em qualquer tratamento, gosto de entender o que realmente incomoda você e o que pode fazer sentido para o seu caso.</p>
       <p class="it">Meu objetivo é unir <strong>conhecimento médico</strong>, <strong>segurança</strong> e <strong>naturalidade</strong> para que você se sinta bem com a sua própria pele.</p>
       <a class="btn btn-wa" href="https://wa.me/5543988788686" target="_blank" rel="noopener">Agendar minha consulta<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"></use></svg></a>
     </div>
@@ -400,7 +410,6 @@ button{font-family:inherit}
   <div class="center trat" id="tratamentos">
     <div class="tag">Tratamentos</div>
     <h2 class="h2">Tratamentos e Especialidades</h2>
-    <p class="lead">Protocolos personalizados para rosto, pele e cabelo — sempre priorizando segurança, naturalidade e o seu bem-estar.</p>
     <div class="tabs" role="tablist">
       <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Rejuvenescimento Facial</button>
       <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Saúde Capilar</button>
