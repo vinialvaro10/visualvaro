@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoShine · Wireframe do site</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="./doc-page.js"></script>
+<style>
+doc-page:not(:defined){visibility:hidden}
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body{color:#1a1a1a;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#1a1a1a}
+a:hover{color:#000}
+</style>
+</helmet>
+<doc-page margin="0.5in">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;padding-bottom:28px;border-bottom:2px solid #1a1a1a">
+    <div>
+      <div style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#777">Wireframe · Baixa fidelidade</div>
+      <h1 style="margin:10px 0 0;font-family:'Archivo Black',sans-serif;font-weight:400;font-size:clamp(24px,6.4vw,56px);line-height:1.05;text-transform:uppercase;letter-spacing:-.02em;overflow-wrap:anywhere">EcoShine · Site institucional</h1>
+    </div>
+    <div style="font-size:14px;line-height:1.6;color:#555;max-width:360px">Estrutura e ordem das seções. Cores, fotos e textos finais aparecem no layout em alta fidelidade.</div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:24px;margin-top:32px">
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">00 Menu</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Fixo no topo, com Instagram ao lado do Orçamento. No celular vira menu hambúrguer e o Instagram fica dentro dele.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:16px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
+        <div style="width:110px;height:34px;border:2px dashed #999;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#777">LOGO</div>
+        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;font-size:12px;font-weight:700;text-transform:uppercase;color:#555"><span>Início</span><span>Eco Shine</span><span>Serviços</span><span>Galeria</span><span>Avaliações</span><span>Localização</span><span style="padding:8px 14px;background:#1a1a1a;color:#fff;border-radius:8px">Orçamento</span><span style="width:26px;height:26px;border-radius:50%;border:2px solid #999"></span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">01 Banner</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Título, texto curto e dois botões. Foto do carro à direita com degradê.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))">
+        <div style="padding:32px 28px;display:flex;flex-direction:column;gap:14px;justify-content:center">
+          <div style="font-family:'Archivo Black',sans-serif;font-size:26px;line-height:1.05;text-transform:uppercase">Soluções automotivas para quem exige mais do seu carro.</div>
+          <div style="height:10px;background:#ddd;width:90%"></div><div style="height:10px;background:#ddd;width:70%"></div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px"><span style="padding:12px 18px;background:#1a1a1a;color:#fff;font-size:11px;font-weight:700;border-radius:8px">ORÇAMENTO</span><span style="padding:12px 18px;border:2px solid #1a1a1a;font-size:11px;font-weight:700;border-radius:8px">CONHECER SOLUÇÕES</span></div>
+        </div>
+        <div style="min-height:260px;background:linear-gradient(to top right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),linear-gradient(to bottom right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),#efefed;display:flex;align-items:center;justify-content:center"><span style="background:#fff;padding:4px 10px;font-size:11px;font-weight:700;color:#777">FOTO DO CARRO</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">02 Eco Shine</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Apresentação da marca e assinatura: Cuidar • Reparar • Customizar • Proteger.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);display:flex;flex-direction:column;gap:20px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px">
+          <div style="font-family:'Archivo Black',sans-serif;font-size:22px;line-height:1.05;text-transform:uppercase">Há quase 10 anos cuidando de sonhos.</div>
+          <div style="display:flex;flex-direction:column;gap:8px"><div style="height:10px;background:#ddd"></div><div style="height:10px;background:#ddd;width:80%"></div><div style="margin-top:8px;font-size:12px;font-weight:700;text-transform:uppercase">Cuidar • Reparar • Customizar • Proteger</div></div>
+        </div>
+        <div style="height:180px;background:linear-gradient(to top right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),linear-gradient(to bottom right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),#efefed;border-radius:36px 4px 36px 4px;display:flex;align-items:center;justify-content:center"><span style="background:#fff;padding:4px 10px;font-size:11px;font-weight:700;color:#777">FOTO PANORÂMICA</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">03 Nossa história</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Origem da marca, da lavagem ecológica ao mercado premium.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px;align-items:center">
+        <div style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'Archivo Black',sans-serif;font-size:22px;line-height:1.05;text-transform:uppercase;margin-bottom:8px">Da lavagem ecológica ao mercado premium.</div><div style="height:10px;background:#ddd"></div><div style="height:10px;background:#ddd"></div><div style="height:10px;background:#ddd;width:60%"></div><div style="height:10px;background:#ddd;margin-top:8px"></div><div style="height:10px;background:#ddd;width:75%"></div></div>
+        <div style="height:220px;background:linear-gradient(to top right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),linear-gradient(to bottom right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),#efefed;border-radius:36px 4px 36px 4px;display:flex;align-items:center;justify-content:center"><span style="background:#fff;padding:4px 10px;font-size:11px;font-weight:700;color:#777">FOTO DA HISTÓRIA</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">04 Serviços</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Carrossel automático com 9 serviços. Cada cartão leva ao orçamento com o serviço já marcado.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);overflow:hidden">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px"><div style="font-family:'Archivo Black',sans-serif;font-size:22px;text-transform:uppercase">Soluções para o seu veículo.</div><div style="display:flex;gap:6px"><span style="width:34px;height:34px;border-radius:50%;border:2px solid #1a1a1a;display:flex;align-items:center;justify-content:center">‹</span><span style="width:34px;height:34px;border-radius:50%;border:2px solid #1a1a1a;display:flex;align-items:center;justify-content:center">›</span></div></div>
+        <div style="display:flex;gap:12px">
+          <div style="flex:0 0 clamp(150px,30%,240px);border:2px solid #bbb;border-radius:24px 4px 24px 4px;overflow:hidden"><div style="height:100px;background:#e6e6e4"></div><div style="padding:12px;font-size:12px;font-weight:700">PPF<div style="margin-top:10px;padding:8px;background:#1a1a1a;color:#fff;text-align:center;border-radius:6px;font-size:10px">ORÇAMENTO</div></div></div>
+          <div style="flex:0 0 clamp(150px,30%,240px);border:2px solid #bbb;border-radius:24px 4px 24px 4px;overflow:hidden"><div style="height:100px;background:#e6e6e4"></div><div style="padding:12px;font-size:12px;font-weight:700">POLIMENTO<div style="margin-top:10px;padding:8px;background:#1a1a1a;color:#fff;text-align:center;border-radius:6px;font-size:10px">ORÇAMENTO</div></div></div>
+          <div style="flex:0 0 clamp(150px,30%,240px);border:2px solid #bbb;border-radius:24px 4px 24px 4px;overflow:hidden"><div style="height:100px;background:#e6e6e4"></div><div style="padding:12px;font-size:12px;font-weight:700">HIGIENIZAÇÃO<div style="margin-top:10px;padding:8px;background:#1a1a1a;color:#fff;text-align:center;border-radius:6px;font-size:10px">ORÇAMENTO</div></div></div>
+          <div style="flex:0 0 clamp(150px,30%,240px);border:2px dashed #bbb;border-radius:24px 4px 24px 4px"></div>
+        </div>
+        <div style="margin-top:14px;font-size:12px;color:#777">PPF · Polimento · Higienização · Insulfilm · Personalização · Envelopamento · Pintura · Rodas especiais · Projetos especiais</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">05 Diferenciais</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Foto à esquerda e 4 diferenciais em lista.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px">
+        <div style="min-height:240px;background:linear-gradient(to top right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),linear-gradient(to bottom right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),#efefed;border-radius:36px 4px 36px 4px"></div>
+        <div style="display:flex;flex-direction:column"><div style="font-family:'Archivo Black',sans-serif;font-size:22px;line-height:1.05;text-transform:uppercase;margin-bottom:14px">Seu carro. Nosso padrão de cuidado.</div>
+          <div style="padding:10px 0;border-top:1px solid #ccc;font-size:12px;font-weight:700">01 Polimento que corrige</div><div style="padding:10px 0;border-top:1px solid #ccc;font-size:12px;font-weight:700">02 Medição antes de polir</div><div style="padding:10px 0;border-top:1px solid #ccc;font-size:12px;font-weight:700">03 PPF com corte digital</div><div style="padding:10px 0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:12px;font-weight:700">04 Equipe treinada em cada etapa</div></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">06 Nossa estrutura</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Grade com 6 itens, cada um com foto e descrição curta.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px)">
+        <div style="font-family:'Archivo Black',sans-serif;font-size:22px;text-transform:uppercase;margin-bottom:16px">Estrutura é confiança.</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;font-size:11px;font-weight:700;text-transform:uppercase">
+          <div style="border:2px solid #bbb;border-radius:20px 4px 20px 4px;overflow:hidden"><div style="height:70px;background:#e6e6e4"></div><div style="padding:10px">Área de detalhamento</div></div>
+          <div style="border:2px solid #bbb;border-radius:20px 4px 20px 4px;overflow:hidden"><div style="height:70px;background:#e6e6e4"></div><div style="padding:10px">Elevador automotivo</div></div>
+          <div style="border:2px solid #bbb;border-radius:20px 4px 20px 4px;overflow:hidden"><div style="height:70px;background:#e6e6e4"></div><div style="padding:10px">Área de pneus</div></div>
+          <div style="border:2px solid #bbb;border-radius:20px 4px 20px 4px;overflow:hidden"><div style="height:70px;background:#e6e6e4"></div><div style="padding:10px">Cabine pressurizada</div></div>
+          <div style="border:2px solid #bbb;border-radius:20px 4px 20px 4px;overflow:hidden"><div style="height:70px;background:#e6e6e4"></div><div style="padding:10px">Sistema Moonwalk</div></div>
+          <div style="border:2px solid #bbb;border-radius:20px 4px 20px 4px;overflow:hidden"><div style="height:70px;background:#e6e6e4"></div><div style="padding:10px">Plotter de recorte</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">07 PPF</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Bloco próprio com explicação e botão "Quero proteger meu carro".</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px;align-items:center">
+        <div style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'Archivo Black',sans-serif;font-size:22px;line-height:1.05;text-transform:uppercase;margin-bottom:8px">PPF: proteção quase invisível.</div><div style="height:10px;background:#ddd"></div><div style="height:10px;background:#ddd;width:80%"></div><div style="height:10px;background:#ddd;width:65%"></div><span style="align-self:flex-start;margin-top:10px;padding:12px 18px;background:#1a1a1a;color:#fff;font-size:11px;font-weight:700;border-radius:8px">QUERO PROTEGER MEU CARRO</span></div>
+        <div style="min-height:220px;background:linear-gradient(to top right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),linear-gradient(to bottom right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),#efefed;border-radius:36px 4px 36px 4px"></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">08 Películas</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Duas linhas de película: Carbono e Cerâmica.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px;align-items:center">
+        <div style="min-height:220px;background:linear-gradient(to top right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),linear-gradient(to bottom right,transparent calc(50% - 1px),#c8c8c8,transparent calc(50% + 1px)),#efefed;border-radius:36px 4px 36px 4px"></div>
+        <div style="display:flex;flex-direction:column"><div style="font-family:'Archivo Black',sans-serif;font-size:22px;line-height:1.05;text-transform:uppercase;margin-bottom:14px">Conforto, segurança e estética.</div><div style="padding:10px 0;border-top:1px solid #ccc;font-size:12px;font-weight:700">01 Carbono</div><div style="padding:10px 0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:12px;font-weight:700">02 Cerâmica</div><span style="align-self:flex-start;margin-top:14px;padding:12px 18px;background:#1a1a1a;color:#fff;font-size:11px;font-weight:700;border-radius:8px">ORÇAMENTO</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">09 Galeria</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">8 fotos de trabalhos. Ao clicar, abre o Instagram @eco_shine.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px)">
+        <div style="font-family:'Archivo Black',sans-serif;font-size:22px;text-transform:uppercase;margin-bottom:16px">Resultados que falam por si.</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:8px">
+          <div style="aspect-ratio:3/4;background:#e6e6e4"></div><div style="aspect-ratio:3/4;background:#e6e6e4"></div><div style="aspect-ratio:3/4;background:#e6e6e4"></div><div style="aspect-ratio:3/4;background:#e6e6e4"></div><div style="aspect-ratio:3/4;background:#e6e6e4"></div><div style="aspect-ratio:3/4;background:#e6e6e4"></div><div style="aspect-ratio:3/4;background:#e6e6e4"></div><div style="aspect-ratio:3/4;background:#e6e6e4"></div>
+        </div>
+        <div style="margin:16px auto 0;width:max-content;max-width:100%;padding:8px 16px 8px 8px;border:2px solid #1a1a1a;border-radius:8px;font-size:11px;font-weight:700;display:flex;align-items:center;gap:8px"><span style="width:20px;height:20px;border-radius:50%;border:2px solid #999"></span>VER GALERIA COMPLETA · @ECO_SHINE</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">10 Avaliações</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Nota geral do Google e carrossel com avaliações reais.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:10px">
+        <div style="border:2px solid #1a1a1a;border-radius:16px;padding:16px;font-size:12px;font-weight:700">EXCELENTE<div style="margin-top:8px">★★★★★</div><div style="margin-top:8px;color:#777;font-weight:500">421 avaliações · Google</div></div>
+        <div style="border:2px solid #bbb;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:6px"><div style="height:8px;background:#ddd"></div><div style="height:8px;background:#ddd;width:80%"></div><div style="height:8px;background:#ddd;width:60%"></div></div>
+        <div style="border:2px solid #bbb;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:6px"><div style="height:8px;background:#ddd"></div><div style="height:8px;background:#ddd;width:80%"></div><div style="height:8px;background:#ddd;width:60%"></div></div>
+        <div style="border:2px solid #bbb;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:6px"><div style="height:8px;background:#ddd"></div><div style="height:8px;background:#ddd;width:80%"></div><div style="height:8px;background:#ddd;width:60%"></div></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">11 Localização</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Endereço, horário, botão "Como chegar" e mapa do Google.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px;align-items:center">
+        <div style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'Archivo Black',sans-serif;font-size:22px;line-height:1.05;text-transform:uppercase;margin-bottom:8px">Seu carro está em boas mãos.</div><div style="font-size:12px;color:#555">Av. Marquês de São Vicente · Barra Funda</div><div style="font-size:12px;color:#555">Seg a sex 8h às 18h · Sáb 8h às 13h</div><span style="align-self:flex-start;margin-top:8px;padding:12px 18px;background:#1a1a1a;color:#fff;font-size:11px;font-weight:700;border-radius:8px">COMO CHEGAR</span></div>
+        <div style="min-height:200px;border-radius:24px 4px 24px 4px;background:repeating-linear-gradient(0deg,#efefed 0 22px,#e0e0dd 22px 24px),#efefed;display:flex;align-items:center;justify-content:center"><span style="background:#fff;padding:4px 10px;font-size:11px;font-weight:700;color:#777">MAPA</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">12 Orçamento</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Formulário que envia a mensagem pronta para o WhatsApp da EcoShine.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px">
+        <div style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'Archivo Black',sans-serif;font-size:22px;line-height:1.05;text-transform:uppercase;margin-bottom:8px">Vamos cuidar do seu carro?</div><div style="height:10px;background:#ddd"></div><div style="height:10px;background:#ddd;width:70%"></div><div style="margin-top:10px;height:120px;background:#e6e6e4;border-radius:24px 4px 24px 4px"></div></div>
+        <div style="border:2px solid #1a1a1a;border-radius:20px 4px 20px 4px;padding:18px;display:flex;flex-direction:column;gap:14px;font-size:11px;font-weight:700;color:#555">
+          <div style="border-bottom:2px solid #bbb;padding-bottom:8px">NOME</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div style="border-bottom:2px solid #bbb;padding-bottom:8px">WHATSAPP</div><div style="border-bottom:2px solid #bbb;padding-bottom:8px">VEÍCULO</div></div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px"><span style="padding:6px 10px;border:1px solid #bbb">PPF</span><span style="padding:6px 10px;border:1px solid #bbb">Polimento</span><span style="padding:6px 10px;border:1px solid #bbb">Insulfilm</span><span style="padding:6px 10px;border:1px solid #bbb">Pneus e balanceamento</span><span style="padding:6px 10px;border:1px solid #bbb">…</span></div>
+          <div style="border-bottom:2px solid #bbb;padding-bottom:22px">MENSAGEM</div>
+          <div style="padding:12px;background:#1a1a1a;color:#fff;text-align:center">ENVIAR PELO WHATSAPP</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-start;break-inside:avoid">
+      <div style="flex:1 1 160px;max-width:260px"><div style="font-family:'Archivo Black',sans-serif;font-size:20px;text-transform:uppercase">13 Rodapé</div><p style="margin:8px 0 0;font-size:14px;line-height:1.55;color:#555">Logo em destaque, horário, contato (WhatsApp e Instagram com ícone), serviços e CNPJ. Botões fixos de Maps, Waze e WhatsApp no canto inferior direito.</p></div>
+      <div style="flex:999 1 320px;min-width:0;border:2px solid #1a1a1a;background:#fff;padding:clamp(16px,4vw,28px);position:relative">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:16px;font-size:11px;font-weight:700;color:#555">
+          <div><div style="width:120px;height:44px;border:2px dashed #999;display:flex;align-items:center;justify-content:center;font-size:10px;color:#777">LOGO</div></div>
+          <div>HORÁRIO<div style="margin-top:8px;height:8px;background:#ddd"></div></div>
+          <div>CONTATO<div style="margin-top:8px;height:8px;background:#ddd"></div><div style="margin-top:8px;display:flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:50%;border:2px solid #999;flex:none"></span><span style="height:8px;background:#ddd;flex:1"></span></div><div style="margin-top:6px;display:flex;align-items:center;gap:6px"><span style="width:12px;height:12px;border-radius:50%;border:2px solid #999;flex:none"></span><span style="height:8px;background:#ddd;flex:1"></span></div></div>
+          <div>SERVIÇOS<div style="margin-top:8px;height:8px;background:#ddd"></div></div>
+        </div>
+        <div style="margin-top:20px;padding-top:12px;border-top:1px solid #ccc;text-align:center;font-size:11px;color:#777">© 2026 EcoShine · CNPJ 39.351.460/0001-08</div>
+        <div style="position:absolute;right:14px;bottom:-18px;display:flex;flex-direction:column;gap:6px;align-items:center"><span style="width:24px;height:24px;border-radius:50%;border:2px solid #1a1a1a;background:#fff"></span><span style="width:24px;height:24px;border-radius:50%;border:2px solid #1a1a1a;background:#fff"></span><span style="width:32px;height:32px;border-radius:50%;background:#1a1a1a"></span></div>
+      </div>
+    </div>
+
+  </div>
+</doc-page>
+</x-dc>
+</body>
+</html>
