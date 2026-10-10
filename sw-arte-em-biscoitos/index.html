@@ -793,7 +793,7 @@ html{scroll-behavior:smooth}
 
 <script>
 /* ===== CONFIGURAÇÃO — edite aqui ===== */
-var WHATSAPP = '';   // ex.: '5511999999999' (DDI + DDD + número)
+var WHATSAPP = '5511977136836';   // DDI + DDD + número
 var EBOOK_URL = '';  // link de compra do ebook (se vazio, abre mensagem no WhatsApp)
 /* ====================================== */
 (function () {
@@ -843,9 +843,9 @@ var EBOOK_URL = '';  // link de compra do ebook (se vazio, abre mensagem no What
     var dt = st.dataNs ? 'Ainda não sei' : (dataIn.value ? dataIn.value.split('-').reverse().join('/') : 'A definir');
     var idea = [st.ideias.join(', '), $('#f-ideia').value.trim()].filter(Boolean).join(' — ') || 'A definir';
     var local = [$('#f-cidade').value.trim(), $('#f-uf').value].filter(Boolean).join('/') || 'A definir';
-    var msg = ['Olá, SW! Vim pelo site e quero solicitar um orçamento de biscoitos personalizados.', '',
-      'Nome: ' + nome, 'Tipo de encomenda: ' + (st.tipo || 'Ainda não sei'), 'Personalização: ' + idea,
-      'Quantidade aproximada: ' + (st.qtd || 'A definir'), 'Data: ' + dt, 'Cidade/UF de entrega: ' + local].join('\n');
+    var msg = ['Olá, SW! 👋 Vim pelo site e quero solicitar um orçamento de biscoitos personalizados. 🍪', '',
+      '*Nome:* ' + nome, '*Tipo de encomenda:* ' + (st.tipo || 'Ainda não sei'), '*Personalização:* ' + idea,
+      '*Quantidade aproximada:* ' + (st.qtd || 'A definir'), '*Data:* ' + dt, '*Cidade/UF de entrega:* ' + local, '', 'Aguardo o retorno. Obrigado!'].join('\n');
     var href = wa(msg);
     $('#wa-sent').href = href; $('#sent-msg').hidden = false;
     try { window.open(href, '_blank', 'noopener'); } catch (err) {}

@@ -5,7 +5,7 @@ Site de uma página (HTML/CSS/JS puros, sem build). Desenvolvido por visualvaro 
 ## Antes de publicar
 Abra `index.html`, procure por `CONFIGURAÇÃO` (início do último `<script>`) e preencha:
 
-- `WHATSAPP` — número com DDI+DDD, ex.: `'5511999999999'`
+- `WHATSAPP` — já está com 5511977136836; altere só se o número mudar
 - `EBOOK_URL` — link de compra do ebook (se vazio, o botão abre uma mensagem no WhatsApp)
 
 ## Publicar no GitHub Pages
