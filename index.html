@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>visualvaro — site novo em breve</title>
-<meta name="description" content="visualvaro — design gráfico & web. Estamos em obras, site novo em breve. Portfólio no Behance e contato por WhatsApp.">
+<title>visualvaro | site novo em breve</title>
+<meta name="description" content="visualvaro: design gráfico e web. Estamos em obras, site novo em breve.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="./assets/favicon.svg">
 <script src="./support.js"></script>
@@ -31,14 +31,26 @@ img{max-width:100%}
 
 <div style="min-height:100vh;display:flex;flex-direction:column;background:#002963;color:#fff">
 
-  <header style="background:#F6F8FC;border-bottom:1px solid rgba(0,41,99,.1)">
-    <div style="max-width:1240px;margin:0 auto;padding:18px clamp(16px,5vw,24px);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
-      <img src="./assets/logo-topo-manutencao.svg" alt="visualvaro — design gráfico &amp; web" style="height:clamp(28px,4.4vw,38px);width:auto;display:block">
-      <nav style="display:flex;gap:clamp(16px,3vw,36px);flex-wrap:wrap">
-        <a href="https://behance.net/visualvaro" target="_blank" title="behance.net/visualvaro" style="color:#7C8DA6;font-size:15px">Portfólio</a>
-        <a href="https://wa.me/5511966383580" target="_blank" title="11 96638-3580" style="color:#7C8DA6;font-size:15px">WhatsApp</a>
+  <header style="background:#001B42;border-bottom:1px solid rgba(255,255,255,.12)">
+    <div style="max-width:1240px;margin:0 auto;padding:22px clamp(20px,4vw,32px);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <img src="./assets/logo-branco-dg-web.png" alt="visualvaro design gráfico e web" style="height:clamp(30px,4.2vw,40px);width:auto;display:block">
+      <button type="button" aria-label="Abrir menu" onClick="{{ alternarMenu }}" style="display:{{ displayHamb }};flex-direction:column;justify-content:center;gap:5px;width:48px;height:48px;padding:12px;background:none;border:none;cursor:pointer">
+        <span style="display:block;height:2.5px;background:#fff;border-radius:2px"></span>
+        <span style="display:block;height:2.5px;background:#fff;border-radius:2px"></span>
+        <span style="display:block;height:2.5px;background:#fff;border-radius:2px"></span>
+      </button>
+      <nav style="display:{{ displayNav }};align-items:center;gap:clamp(18px,3vw,32px);flex-wrap:wrap">
+        <a href="https://behance.net/visualvaro" target="_blank" title="behance.net/visualvaro" style="color:#E6E6E6;font-size:17px;letter-spacing:.02em" style-hover="color:#00AFEF">Portfólio</a>
+        <a href="https://wa.me/5511966383580" target="_blank" title="11 96638-3580" style="color:#E6E6E6;font-size:17px;letter-spacing:.02em" style-hover="color:#00AFEF">WhatsApp</a>
+        <a href="https://wa.me/5511966383580" target="_blank" style="color:#fff;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:12px 20px;border-radius:999px;border:2px solid #fff;box-shadow:4px 4px 0 rgba(0,0,0,.35);white-space:nowrap;background:#0460E0;transition:transform .2s ease,box-shadow .2s ease" style-hover="color:#fff;transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.35)">Fazer um orçamento</a>
       </nav>
     </div>
+    <sc-if value="{{ menuAberto }}" hint-placeholder-val="{{ false }}">
+      <nav style="background:#001B42;border-top:1px solid rgba(255,255,255,.12);padding:4px clamp(20px,4vw,32px) 20px;display:flex;flex-direction:column">
+        <a href="https://behance.net/visualvaro" target="_blank" onClick="{{ fecharMenu }}" style="color:#fff;font-weight:800;font-size:20px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.1)">Portfólio</a>
+        <a href="https://wa.me/5511966383580" target="_blank" onClick="{{ fecharMenu }}" style="color:#fff;font-weight:800;font-size:20px;padding:16px 0">WhatsApp</a>
+      </nav>
+    </sc-if>
   </header>
 
   <main style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:clamp(48px,9vw,64px);padding:clamp(56px,12vw,96px) clamp(16px,5vw,24px)">
@@ -55,13 +67,33 @@ img{max-width:100%}
     <div style="position:absolute;inset:0;background-image:url('./assets/pattern.png');background-size:700px;opacity:.05;mix-blend-mode:screen"></div>
     <div style="position:relative;max-width:1240px;margin:0 auto">
       <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
-        <img src="./assets/logo-visualvaro.png" alt="visualvaro — design gráfico &amp; web" style="height:clamp(26px,3.4vw,36px);width:auto;display:block">
-        <a href="https://wa.me/5511966383580" target="_blank" style="background:#0460E0;color:#fff;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:14px 24px;border-radius:999px" style-hover="background:#00AFEF;color:#002963">Falar no WhatsApp</a>
+        <img src="./assets/logo-visualvaro.png" alt="visualvaro design gráfico e web" style="height:clamp(26px,3.4vw,36px);width:auto;display:block">
+        <a href="https://wa.me/5511966383580" target="_blank" style="background:#15803D;color:#fff;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:10px 18px;border-radius:999px;border:2px solid #fff;box-shadow:4px 4px 0 rgba(0,0,0,.35);white-space:nowrap;transition:transform .2s ease,box-shadow .2s ease" style-hover="color:#fff;background:#0460E0;transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.35)">WhatsApp</a>
       </div>
     </div>
   </footer>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{}"></script>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  state = { mobile:false, menu:false };
+  componentDidMount() {
+    this.mq = window.matchMedia('(max-width: 700px)');
+    this.onMq = e => this.setState({ mobile: e.matches, menu: false });
+    this.setState({ mobile: this.mq.matches });
+    this.mq.addEventListener('change', this.onMq);
+  }
+  componentWillUnmount() { if (this.mq) this.mq.removeEventListener('change', this.onMq); }
+  renderVals() {
+    return {
+      displayNav: this.state.mobile ? 'none' : 'flex',
+      displayHamb: this.state.mobile ? 'flex' : 'none',
+      menuAberto: this.state.mobile && this.state.menu,
+      alternarMenu: () => this.setState(s => ({ menu: !s.menu })),
+      fecharMenu: () => this.setState({ menu: false })
+    };
+  }
+}
+</script>
 </body>
 </html>
