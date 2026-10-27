@@ -5,7 +5,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<script>window.__SLOTS__={"foto-sobre":{"s":1,"x":0,"y":-8.838558210191962},"servico-06":{"u":"assets/slot-servico-06.jpg?v=mvpvuu5w","s":1,"x":0,"y":0},"servico-01":{"u":"assets/slot-servico-01.jpg?v=mvpvuu5w","s":1,"x":0,"y":0},"servico-02":{"u":"assets/slot-servico-02.jpg?v=mvpvuu5w","s":1,"x":0,"y":0},"servico-03":{"u":"assets/slot-servico-03.jpg?v=mvpvuu5w","s":1,"x":0,"y":0},"foto-orcamento":{"s":1,"x":0,"y":-15.419797451813134,"u":"assets/slot-foto-orcamento.webp?v=mvpvuu5w"},"servico-08":{"s":1.0821929451456067,"x":-2.0131829223943,"y":4.1096472572803355,"u":"assets/slot-servico-08.webp?v=mvpvuu5w"},"servico-09":{"s":1,"x":0,"y":0.3859839575417647,"u":"assets/slot-servico-09.webp?v=mvpvuu5w"},"servico-07":{"u":"assets/slot-servico-07.jpg?v=mvpvuu5w","s":1,"x":0,"y":0}}</script>
+<script>window.__SLOTS__={"foto-sobre":{"s":1,"x":0,"y":-8.838558210191962},"servico-01":{"u":"assets/slot-servico-01.jpg?v=mvpvuu5w","s":1,"x":0,"y":0},"servico-02":{"u":"assets/slot-servico-02.jpg?v=mvpvuu5w","s":1,"x":0,"y":0},"servico-03":{"u":"assets/slot-servico-03.jpg?v=mvpvuu5w","s":1,"x":0,"y":0},"foto-orcamento":{"s":1,"x":0,"y":-15.419797451813134,"u":"assets/slot-foto-orcamento.webp?v=mvpvuu5w"},"servico-08":{"s":1.0821929451456067,"x":-2.0131829223943,"y":4.1096472572803355,"u":"assets/slot-servico-08.webp?v=mvpvuu5w"},"servico-09":{"s":1,"x":0,"y":0.3859839575417647,"u":"assets/slot-servico-09.webp?v=mvpvuu5w"},"servico-07":{"u":"assets/slot-servico-07.jpg?v=mvpvuu5w","s":1,"x":0,"y":0}}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js?v=mvpvuu5w"></script>
 </head>
@@ -670,15 +670,15 @@ class Component extends DCLogic {
       ['Personalização', 'Customização', '', '', 'Importação, instalação de kits premium, peças em fibra de carbono e rodas forjadas, tudo com acabamento de alto padrão.', '09'],
       ['Envelopamento', 'Customização', 'assets/gt2rs.jpg', 'center 60%', 'Mudança de cor ou acabamento (brilho, fosco ou acetinado) sem alterar a pintura original.'],
       ['Assoalho traseiro', 'Antes e depois', '', '', 'Tratamento da parte de baixo do assoalho traseiro, removendo barro, ferrugem superficial e contaminantes.', '', 'assoalho'],
-      ['Pintura', 'Customização', 'assets/pintura-cabine.jpg', 'center 55%', 'Pintura automotiva com acerto de cor e acabamento no padrão de fábrica.'],
+      ['Pintura', 'Customização', 'assets/pintura-cabine.jpg?v=mvpykijv', 'center 55%', 'Pintura automotiva com acerto de cor e acabamento no padrão de fábrica.'],
       ['Traseira inferior', 'Antes e depois', '', '', 'Limpeza da região inferior da traseira, sob o para-choque, incluindo protetores e saídas do escapamento.', '', 'traseira'],
-      ['Rodas especiais', 'Customização', 'assets/ferrari-296.jpg', 'center 25%', 'Reforma, pintura e customização de rodas, com cores e acabamentos sob medida.'],
+      ['Rodas especiais', 'Customização', 'assets/rodas-especiais.jpg?v=mvpyl2l8', '8% 60%', 'Reforma, pintura e customização de rodas, com cores e acabamentos sob medida.'],
       ['Projetos especiais', 'Especialidades', 'assets/aventador.jpg', 'center 60%', 'Projetos sob medida para veículos premium e esportivos, planejados caso a caso com o proprietário.']
     ];
     const slots = ['01','10','02','11','03','08','09','04','12','05','13','06','07'];
     const cmp = this.state.cmp || {};
     const services = svc.map(([title, cat, img, pos, desc, _s, isCmp], i) => ({ title, cat, img, pos, desc, num: String(i + 1).padStart(2, '0'), slot: slots[i],
-      hasCmp: !!isCmp, noCmp: !isCmp, antes: isCmp ? 'assets/ad-' + isCmp + '-antes.jpg' : '', depois: isCmp ? 'assets/ad-' + isCmp + '-depois.jpg' : '', cmpLeft: (cmp[slots[i]] ?? 50) + '%', cmpRight: (100 - (cmp[slots[i]] ?? 50)) + '%',
+      hasCmp: !!isCmp, noCmp: !isCmp, antes: isCmp ? 'assets/ad-' + isCmp + '-antes.jpg?v=mvpyk29j' : '', depois: isCmp ? 'assets/ad-' + isCmp + '-depois.jpg?v=mvpyk29j' : '', cmpLeft: (cmp[slots[i]] ?? 50) + '%', cmpRight: (100 - (cmp[slots[i]] ?? 50)) + '%',
       onCmp: (e) => { const r = e.currentTarget.getBoundingClientRect(); const p = Math.min(100, Math.max(0, (e.clientX - r.left) / r.width * 100)); const k = slots[i]; this.setState(st => ({ cmp: { ...(st.cmp || {}), [k]: p } })); },
       hasImg: !!img, noImg: !img, radius: '32px 6px 32px 6px', pick: () => this.pick(title) }));
     const tp = this.state.tp ?? { left: 0, width: 0.4 };
