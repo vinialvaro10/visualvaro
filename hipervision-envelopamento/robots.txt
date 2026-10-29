@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hipervisionenvelopamento.com.br/sitemap.xml

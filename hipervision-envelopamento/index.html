@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Envelopamento Automotivo em São Paulo | HIPERVISION · Casa Verde</title>
+<meta name="description" content="Envelopamento automotivo na Casa Verde, São Paulo. Simule a nova cor do seu carro e peça orçamento pelo WhatsApp. HIPERVISION, desde 2010.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="canonical" href="https://hipervisionenvelopamento.com.br/">
+<link rel="icon" type="image/png" href="img/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="HIPERVISION Envelopamento">
+<meta property="og:title" content="Envelopamento Automotivo em São Paulo | HIPERVISION · Casa Verde">
+<meta property="og:description" content="Envelopamento automotivo na Casa Verde, São Paulo. Simule a nova cor do seu carro e peça orçamento pelo WhatsApp. HIPERVISION, desde 2010.">
+<meta property="og:url" content="https://hipervisionenvelopamento.com.br/">
+<meta property="og:image" content="https://hipervisionenvelopamento.com.br/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Envelopamento Automotivo em São Paulo | HIPERVISION · Casa Verde">
+<meta name="twitter:description" content="Envelopamento automotivo na Casa Verde, São Paulo. Simule a nova cor do seu carro e peça orçamento pelo WhatsApp. HIPERVISION, desde 2010.">
+<meta name="twitter:image" content="https://hipervisionenvelopamento.com.br/img/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoBodyShop","name":"HIPERVISION Envelopamento","url":"https://hipervisionenvelopamento.com.br/","image":"https://hipervisionenvelopamento.com.br/img/og.png","logo":"https://hipervisionenvelopamento.com.br/img/logo.png","foundingDate":"2010","telephone":"+55 11 95084-3938","address":{"@type":"PostalAddress","streetAddress":"Rua Brigadeiro Xavier de Brito, 588","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"02551-000","addressCountry":"BR"},"areaServed":"São Paulo, SP","sameAs":["https://www.instagram.com/hipervisionenvelopamento/","https://www.facebook.com/HipervisionEnvelopamento"]}</script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,700..900&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#0A0A0A;color:#fff;font-family:'Archivo',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#fff;text-decoration:none}
+a:hover{color:#199B3C}
+*{box-sizing:border-box}
+</style>
+</helmet>
+
+<header data-screen-label="Header" style="position:fixed;top:0;left:0;right:0;z-index:50;background:{{ headerBg }};backdrop-filter:blur(10px);border-bottom:1px solid {{ headerLine }};transition:background .3s">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,40px);height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#topo" aria-label="HIPERVISION, início" style="display:flex;align-items:center;gap:12px">
+      <img src="img/logo.png" alt="" style="width:34px;height:34px;object-fit:contain;display:block">
+      <span style="font-weight:800;font-stretch:115%;letter-spacing:0.09em;font-size:15px;text-transform:uppercase">Hipervision</span>
+    </a>
+    <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+      <nav style="display:flex;align-items:center;gap:28px;font-size:12px;font-weight:700;letter-spacing:0.03em;text-transform:uppercase">
+        <a href="#configurador">Simulador</a>
+        <a href="#envelopamento">Envelopamento</a>
+        <a href="#acabamentos">Acabamentos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <a href="{{ waOrc }}" target="_blank" rel="noopener" style="background:#fff;color:#0A0A0A;padding:12px 18px" style-hover="background:#199B3C;color:#fff">Orçamento</a>
+      </nav>
+    </sc-if>
+    <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+      <button onClick="{{ toggleMenu }}" aria-label="Abrir menu" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:#fff;width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer">
+        <span style="width:18px;height:2px;background:#fff;display:block"></span>
+        <span style="width:18px;height:2px;background:#fff;display:block"></span>
+        <span style="width:18px;height:2px;background:#fff;display:block"></span>
+      </button>
+    </sc-if>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <nav onClick="{{ closeMenu }}" style="display:flex;flex-direction:column;background:#0A0A0A;border-top:1px solid #222;padding:8px 20px 24px;font-size:22px;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em">
+      <a href="#configurador" style="padding:14px 0;border-bottom:1px solid #29282B">Simulador de cores</a>
+      <a href="#envelopamento" style="padding:14px 0;border-bottom:1px solid #29282B">Envelopamento</a>
+      <a href="#acabamentos" style="padding:14px 0;border-bottom:1px solid #29282B">Cores e acabamentos</a>
+      <a href="#projetos" style="padding:14px 0;border-bottom:1px solid #29282B">Projetos</a>
+      <a href="#contato" style="padding:14px 0">Contato</a>
+      <a href="{{ waOrc }}" target="_blank" rel="noopener" style="margin-top:12px;background:#fff;color:#0A0A0A;padding:16px;text-align:center;font-size:16px;font-stretch:100%;letter-spacing:0.04em">Solicitar orçamento</a>
+    </nav>
+  </sc-if>
+</header>
+
+<main>
+<section id="topo" data-screen-label="01 Hero" style="position:relative;min-height:{{ heroMinH }};display:flex;align-items:{{ heroAlign }};overflow:hidden;background:#000">
+  <img ref="{{ heroRef }}" src="img/web.png" alt="Carro esportivo em estúdio com iluminação vermelha" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ heroPos }};display:block">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 70%,#0A0A0A 100%)"></div>
+  <div style="position:relative;width:100%;max-width:1320px;margin:0 auto;padding:{{ heroPad }}">
+    <div style="font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#969696;margin-bottom:24px">Especialistas em envelopamento automotivo desde 2010</div>
+    <h1 style="margin:0;font-size:clamp(48px,8.5vw,128px);line-height:0.88;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.02em;max-width:{{ heroH1Max }};text-wrap:balance">Envelopamento completo</h1>
+    <p style="margin:28px 0 0;max-width:500px;font-size:clamp(16px,1.5vw,19px);line-height:1.55;color:#E4E5E7;text-wrap:pretty">Transformamos o visual do seu veículo com envelopamento automotivo e acabamentos que destacam sua personalidade.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:36px">
+      <a href="#configurador" style="background:#fff;color:#0A0A0A;padding:18px 28px;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase" style-hover="background:#199B3C;color:#fff">Simule sua nova cor</a>
+      <a href="{{ waOrc }}" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,0.45);color:#fff;padding:18px 28px;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase" style-hover="border-color:#199B3C;color:#fff;background:#199B3C">Solicitar orçamento</a>
+    </div>
+  </div>
+</section>
+
+<section id="configurador" data-screen-label="02 Configurador" style="padding:clamp(72px,10vw,140px) 0;background:radial-gradient(ellipse 70% 50% at 50% 45%,#FFFFFF 0%,#E6E7E9 75%);color:#0A0A0A;overflow:hidden">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,40px);display:flex;flex-direction:column">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <span style="font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#7D7D7D">Simulador de envelopamento</span>
+        <h2 style="margin:0;font-size:clamp(44px,7.5vw,112px);line-height:0.88;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em;max-width:900px;text-wrap:balance">Ajuste a cor do seu jeito</h2>
+      </div>
+      <p style="margin:0;max-width:400px;font-size:17px;line-height:1.6;color:#3A3D42;text-wrap:pretty">Escolha uma cor e arraste o controle para comparar o visual original com o carro envelopado.</p>
+    </div>
+    <div style="position:relative;width:100%;max-width:1100px;margin:clamp(64px,7vw,104px) auto 0;aspect-ratio:1493/477">
+      <button onClick="{{ bmwPrev }}" aria-label="Cor anterior" style="position:absolute;top:50%;left:-4px;transform:translateY(-50%);z-index:2;width:36px;height:36px;border-radius:50%;border:0;background:transparent;color:#0A0A0A;opacity:0.35;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity .2s, color .2s" style-hover="opacity:1;color:#199B3C">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path d="M16 5 L7 12 L16 19 Z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linejoin="round"></path></svg>
+      </button>
+      <button onClick="{{ bmwNext }}" aria-label="Próxima cor" style="position:absolute;top:50%;right:-4px;transform:translateY(-50%);z-index:2;width:36px;height:36px;border-radius:50%;border:0;background:transparent;color:#0A0A0A;opacity:0.35;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity .2s, color .2s" style-hover="opacity:1;color:#199B3C">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path d="M8 5 L17 12 L8 19 Z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linejoin="round"></path></svg>
+      </button>
+      <div style="position:absolute;left:6%;right:6%;bottom:-1%;height:12%;background:radial-gradient(ellipse at center,rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 70%)"></div>
+      <img src="img/original.png" alt="Carro na cor original" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;user-select:none" draggable="false">
+      <img src="img/vermelho.png" alt="Simulação vermelho" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;user-select:none;transition:opacity .45s ease;opacity:{{ bmwOp0 }};clip-path:inset(0 0 0 {{ split }}%)">
+      <img src="img/amarelo.png" alt="Simulação amarelo" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;user-select:none;transition:opacity .45s ease;opacity:{{ bmwOp1 }};clip-path:inset(0 0 0 {{ split }}%)">
+      <img src="img/azul.png" alt="Simulação azul" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;user-select:none;transition:opacity .45s ease;opacity:{{ bmwOp2 }};clip-path:inset(0 0 0 {{ split }}%)">
+      <img src="img/verde.png" alt="Simulação verde" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;user-select:none;transition:opacity .45s ease;opacity:{{ bmwOp3 }};clip-path:inset(0 0 0 {{ split }}%)">
+      <img src="img/rosa.png" alt="Simulação rosa" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;user-select:none;transition:opacity .45s ease;opacity:{{ bmwOp4 }};clip-path:inset(0 0 0 {{ split }}%)">
+      <div ref="{{ splitRef }}" onPointerDown="{{ splitDown }}" onPointerMove="{{ splitMove }}" onTouchMove="{{ splitTouch }}" style="position:absolute;inset:0;z-index:1;cursor:ew-resize;touch-action:pan-y">
+        <div style="position:absolute;top:50%;left:{{ split }}%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;background:#1E6BFF;color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;box-shadow:0 0 0 7px rgba(30,107,255,0.22), 0 6px 18px rgba(30,107,255,0.35);pointer-events:none">Arraste</div>
+        <div style="position:absolute;top:-10%;left:0;font-size:12px;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#7D7D7D;pointer-events:none">Original</div>
+        <div style="position:absolute;top:-10%;right:0;font-size:12px;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#0A0A0A;pointer-events:none">Envelopado</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px;align-items:end;margin-top:clamp(48px,5vw,72px);padding-top:32px;border-top:1px solid #C9CBCF">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.09em;color:#7D7D7D">Cor · <span style="color:#0A0A0A">{{ bmwActive.name }}</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:14px">
+          <sc-for list="{{ bmw }}" as="b" hint-placeholder-count="5">
+            <button onClick="{{ b.select }}" aria-label="{{ b.name }}" title="{{ b.name }}" style="width:36px;height:36px;border-radius:50%;padding:0;cursor:pointer;background:{{ b.hex }};border:3px solid #fff;box-shadow:0 0 0 {{ b.halo }} #0A0A0A, 0 2px 6px rgba(0,0,0,0.25);transition:box-shadow .2s, transform .2s" style-hover="transform:scale(1.1)"></button>
+          </sc-for>
+          <span title="Mais cores disponíveis no atendimento" aria-label="Mais cores disponíveis no atendimento" style="width:36px;height:36px;border-radius:50%;background:#fff;border:1.5px dashed #0A0A0A;color:#0A0A0A;display:flex;align-items:center;justify-content:center;user-select:none;cursor:default"><svg width="14" height="14" viewBox="0 0 14 14" style="display:block"><path d="M7 1v12M1 7h12" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"></path></svg></span>
+        </div>
+      </div>
+      <a href="{{ waCor }}" target="_blank" rel="noopener" style="background:#0A0A0A;color:#fff;padding:20px 28px;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase;text-align:center" style-hover="background:#199B3C;color:#fff">Quero essa cor no meu carro</a>
+    </div>
+    <p style="margin:20px 0 0;font-size:13px;color:#7D7D7D;line-height:1.5">Simulação ilustrativa. Cores e acabamentos disponíveis são confirmados no atendimento.</p>
+    <div style="display:flex;flex-direction:column;gap:20px;margin-top:clamp(56px,6vw,88px)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;width:100%">
+        <sc-for list="{{ apps }}" as="a" hint-placeholder-count="6">
+          <div style="position:relative;aspect-ratio:3/4;border-radius:12px;overflow:hidden;background:#1E1E1E">
+            <img src="{{ a.src }}" alt="{{ a.alt }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease" style-hover="transform:scale(1.05)">
+            <div style="position:absolute;left:0;right:0;bottom:0;padding:56px 14px 14px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.85));color:#fff;display:flex;flex-direction:column;gap:4px;pointer-events:none">
+              <span style="font-size:16px;font-weight:900;font-stretch:80%;text-transform:uppercase;line-height:1.05">{{ a.color }}</span>
+              <span style="font-size:13px;color:#E4E5E7">{{ a.model }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="envelopamento" data-screen-label="03 Envelopamento" style="padding:clamp(72px,10vw,140px) 0;background:#0A0A0A">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(40px,6vw,88px);align-items:center">
+    <div style="aspect-ratio:4/5;overflow:hidden;background:#1B1B1F">
+      <img src="img/p-g-noite.jpg" alt="Mercedes-AMG G-Class envelopado em verde em frente à sede da HIPERVISION" style="width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <span style="font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#969696">Serviço principal</span>
+      <h2 style="margin:0;font-size:clamp(40px,5.6vw,84px);line-height:0.9;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em;text-wrap:balance"><span style="display:block">Mais do que mudar a cor.</span><span style="display:block;margin-top:0.28em">Transformar a presença do seu carro.</span></h2>
+      <p style="margin:0;font-size:17px;line-height:1.65;color:#B8BABE;max-width:540px;text-wrap:pretty">O envelopamento é a aplicação de películas automotivas sobre a carroceria para mudar a aparência externa do veículo, cor, acabamento e combinações, sem pintura convencional.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:1px solid #333333">
+        <div style="padding:20px 16px 20px 0;border-bottom:1px solid #333333;display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:800;color:#7D7D7D">01</span><span style="font-size:18px;font-weight:800;font-stretch:85%;text-transform:uppercase">Personalização visual</span></div>
+        <div style="padding:20px 16px 20px 0;border-bottom:1px solid #333333;display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:800;color:#7D7D7D">02</span><span style="font-size:18px;font-weight:800;font-stretch:85%;text-transform:uppercase">Variedade de cores</span></div>
+        <div style="padding:20px 16px 20px 0;border-bottom:1px solid #333333;display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:800;color:#7D7D7D">03</span><span style="font-size:18px;font-weight:800;font-stretch:85%;text-transform:uppercase">Diferentes acabamentos</span></div>
+        <div style="padding:20px 16px 20px 0;border-bottom:1px solid #333333;display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:800;color:#7D7D7D">04</span><span style="font-size:18px;font-weight:800;font-stretch:85%;text-transform:uppercase">Combinações estéticas</span></div>
+      </div>
+      <div style="display:flex"><a href="{{ waEnv }}" target="_blank" rel="noopener" style="background:#fff;color:#0A0A0A;padding:18px 28px;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase" style-hover="background:#199B3C;color:#fff">Solicitar orçamento</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="acabamentos" data-screen-label="04 Cores e acabamentos" style="padding:clamp(72px,10vw,140px) 0;background:#1E1E1E;border-top:1px solid #29282B">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,40px);display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+      <h2 style="margin:0;font-size:clamp(44px,7vw,104px);line-height:0.88;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em">Um universo de<br>possibilidades.</h2>
+      <p style="margin:0;max-width:380px;font-size:16px;line-height:1.6;color:#B8BABE">Acabamentos que mudam a forma como a luz desenha a carroceria. Consulte a disponibilidade de cada cor no atendimento.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px;width:100%;max-width:1200px;margin:0 auto">
+      <sc-for list="{{ finishCards }}" as="c" hint-placeholder-count="6">
+        <div style="background:#1E1E1E;display:flex;flex-direction:column;border-radius:16px;overflow:hidden;border:1px solid #29282B">
+          <div style="aspect-ratio:4/3;overflow:hidden;background:#0A0A0A"><img src="{{ c.img }}" alt="{{ c.alt }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:{{ c.pos }};display:block;transition:transform .6s ease" style-hover="transform:scale(1.04)"></div>
+          <div style="padding:24px 24px 24px;display:flex;flex-direction:column;gap:10px;flex:1">
+            <h3 style="margin:0;font-size:26px;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em">{{ c.name }}</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:#969696;flex:1">{{ c.desc }}</p>
+            <div style="height:1px;background:#333333;margin-top:14px"></div>
+            <a href="{{ c.wa }}" target="_blank" rel="noopener" style="margin-top:10px;display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:10px;background:#fff;color:#0A0A0A;font-size:13px;font-weight:800;letter-spacing:0.03em;text-transform:uppercase;transition:background .2s, color .2s" style-hover="background:#199B3C;color:#fff">Orçamento</a>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="projetos" data-screen-label="05 Projetos" style="padding:clamp(72px,10vw,140px) 0;background:#F2F2F3;color:#0A0A0A">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,40px);display:flex;flex-direction:column;gap:clamp(40px,5vw,56px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+      <h2 style="margin:0;font-size:clamp(44px,7vw,104px);line-height:0.88;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em">Cada projeto,<br>uma nova <span>identidade.</span></h2>
+      <span style="font-size:12px;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#7D7D7D">Trabalhos HIPERVISION</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      <sc-for list="{{ projFilters }}" as="pf" hint-placeholder-count="5">
+        <button onClick="{{ pf.select }}" style="padding:10px 16px;min-height:44px;font-family:inherit;font-size:12px;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;cursor:pointer;background:{{ pf.bg }};color:{{ pf.fg }};border:1px solid #0A0A0A">{{ pf.name }}</button>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:12px">
+      <sc-for list="{{ projects }}" as="p" hint-placeholder-count="8">
+        <div style="aspect-ratio:3/4;overflow:hidden;position:relative;background:#0A0A0A">
+          <img src="{{ p.src }}" alt="{{ p.alt }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease" style-hover="transform:scale(1.04)">
+          <div style="position:absolute;left:0;right:0;bottom:0;padding:48px 16px 16px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.8));color:#fff;display:flex;flex-direction:column;gap:4px;pointer-events:none">
+            <span style="font-size:11px;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:#E4E5E7">{{ p.tag }}</span>
+            <span style="font-size:18px;font-weight:900;font-stretch:80%;text-transform:uppercase">{{ p.name }}</span>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+      <a href="{{ waProj }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;padding:16px 28px;border-radius:14px;background:#0A0A0A;color:#fff;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase;transition:background .2s" style-hover="background:#199B3C;color:#fff">Quero um resultado assim</a>
+      <a href="https://www.instagram.com/hipervisionenvelopamento/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:14px;min-width:min(100%,380px);padding:16px 28px;border-radius:14px;background:#1E1E1E;border:1px solid #565656;color:#fff;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase;transition:background .2s,border-color .2s" style-hover="background:#199B3C;border-color:#199B3C;color:#fff"><span style="width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%);display:flex;align-items:center;justify-content:center;flex:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="#fff"></circle></svg></span>Ver galeria completa</a>
+    </div>
+  </div>
+</section>
+
+<section id="por-que" data-screen-label="06 Por que" style="background:#1E1E1E">
+  <div style="max-width:1320px;margin:0 auto;padding:clamp(64px,8vw,112px) clamp(16px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,5vw,72px);align-items:center">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="font-size:clamp(120px,18vw,260px);line-height:0.8;font-weight:900;font-stretch:72%">16</div>
+      <h2 style="margin:0;font-size:clamp(36px,4.6vw,64px);line-height:0.92;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em;text-wrap:balance">Anos de experiência que se vê nos detalhes.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,0.4)">
+        <div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.4);font-size:19px;font-weight:700">Atuação no mercado automotivo desde 2010</div>
+        <div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.4);font-size:19px;font-weight:700">Especialização em envelopamento automotivo</div>
+        <div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.4);font-size:19px;font-weight:700">Personalização visual de cada veículo</div>
+        <div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.4);font-size:19px;font-weight:700">Atenção aos detalhes e ao acabamento</div>
+        <div style="padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.4);font-size:19px;font-weight:700">Atendimento para entender o que você espera</div>
+      </div>
+      <div style="display:flex"><a href="{{ waOrc }}" target="_blank" rel="noopener" style="background:#0A0A0A;color:#fff;padding:18px 28px;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase" style-hover="background:#199B3C;color:#fff">Converse com nossa equipe</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" data-screen-label="08 Sobre" style="padding:clamp(72px,10vw,140px) 0;background:#F2F2F3;color:#0A0A0A">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,88px);align-items:center">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <span style="font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#565656">Sobre a HIPERVISION</span>
+      <h2 style="margin:0;font-size:clamp(40px,5.6vw,84px);line-height:0.9;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em;text-wrap:balance">Desde 2010, transformando a aparência dos veículos.</h2>
+      <p style="margin:0;font-size:17px;line-height:1.65;color:#3A3D42;max-width:540px;text-wrap:pretty">São 16 anos dedicados ao envelopamento automotivo e à personalização visual. Da Casa Verde, em São Paulo, a HIPERVISION atende quem quer ver o próprio carro de um jeito novo.</p>
+      <div style="display:flex;gap:40px;flex-wrap:wrap;padding-top:8px">
+        <div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:56px;font-weight:900;font-stretch:72%;line-height:1">2010</span><span style="font-size:12px;font-weight:800;letter-spacing:0.03em;text-transform:uppercase;color:#7D7D7D">Início das atividades</span></div>
+        <div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:56px;font-weight:900;font-stretch:72%;line-height:1">16</span><span style="font-size:12px;font-weight:800;letter-spacing:0.03em;text-transform:uppercase;color:#7D7D7D">Anos de atuação</span></div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;min-width:0">
+      <div style="aspect-ratio:3/4;min-width:0;overflow:hidden"><img src="img/fachada.jpg" alt="Fachada da HIPERVISION na Casa Verde, São Paulo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="aspect-ratio:3/4;margin-top:48px;min-width:0;overflow:hidden"><img src="img/p-suv-perfil.jpg" alt="Estrutura interna da HIPERVISION" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </div>
+  </div>
+</section>
+
+<section id="avaliacoes" data-screen-label="09 Avaliações" style="padding:clamp(72px,10vw,120px) 0;background:#fff;color:#0A0A0A;border-top:1px solid #E2E3E5">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,40px);display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+      <h2 style="margin:0;font-size:clamp(40px,6vw,88px);line-height:0.9;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em;max-width:880px;text-wrap:balance">Feedbacks</h2>
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:10px">
+        <div style="display:flex;align-items:baseline;gap:10px"><span style="font-size:56px;font-weight:900;font-stretch:72%;line-height:1">90%</span><span style="font-size:13px;font-weight:700;color:#3A3D42;max-width:160px;line-height:1.35">recomendam no Facebook · 47 avaliações</span></div>
+        <a href="https://www.facebook.com/HipervisionEnvelopamento/reviews" target="_blank" rel="noopener" style="color:#0A0A0A;font-size:13px;font-weight:800;letter-spacing:0.03em;text-transform:uppercase;border-bottom:1px solid #0A0A0A;padding-bottom:4px">Ver todas as avaliações</a>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px">
+      <sc-for list="{{ reviews }}" as="r" hint-placeholder-count="6">
+        <figure style="margin:0;background:#F2F2F3;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:24px">
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <blockquote style="margin:0;font-size:19px;line-height:1.45;font-weight:600;color:#0A0A0A;text-wrap:pretty">“{{ r.text }}”</blockquote>
+          </div>
+          <figcaption style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid #D6D7DA;padding-top:14px">
+            <span style="font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em">{{ r.name }}</span>
+          </figcaption>
+        </figure>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="contato" data-screen-label="10 Contato" style="padding:clamp(72px,10vw,140px) 0;background:#0A0A0A">
+  <div style="max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,80px)">
+    <div style="display:flex;flex-direction:column;gap:36px">
+      <h2 style="margin:0;font-size:clamp(40px,5.6vw,84px);line-height:0.9;font-weight:900;font-stretch:72%;text-transform:uppercase;letter-spacing:-0.015em;text-wrap:balance">Visite nosso espaço</h2>
+      <div style="display:flex;flex-direction:column;border-top:1px solid #333333">
+        <div style="padding:18px 0;border-bottom:1px solid #333333;display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;font-weight:800;letter-spacing:0.09em;color:#7D7D7D;text-transform:uppercase">WhatsApp</span><a href="{{ waOrc }}" target="_blank" rel="noopener" style="font-size:22px;font-weight:800">(11) 95084-3938</a></div>
+        <div style="padding:18px 0;border-bottom:1px solid #333333;display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;font-weight:800;letter-spacing:0.09em;color:#7D7D7D;text-transform:uppercase">Endereço</span><address style="font-style:normal;font-size:18px;font-weight:700;line-height:1.45">Rua Brigadeiro Xavier de Brito, 588<br>Casa Verde, São Paulo, SP<br>CEP 02551-000</address></div>
+        <div style="padding:18px 0;border-bottom:1px solid #333333;display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;font-weight:800;letter-spacing:0.09em;color:#7D7D7D;text-transform:uppercase">Horários</span><span style="font-size:18px;font-weight:700">A confirmar</span></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="{{ waOrc }}" target="_blank" rel="noopener" style="background:#fff;color:#0A0A0A;padding:18px 28px;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase" style-hover="background:#199B3C;color:#fff">Solicitar orçamento pelo WhatsApp</a>
+        <a href="{{ mapsLink }}" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,0.45);padding:18px 28px;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase" style-hover="border-color:#199B3C;color:#fff;background:#199B3C">Abrir no Google Maps</a>
+      </div>
+    </div>
+    <div style="min-height:420px;background:#1E1E1E">
+      <iframe title="Mapa, HIPERVISION, Casa Verde" src="https://maps.google.com/maps?q=Rua%20Brigadeiro%20Xavier%20de%20Brito%2C%20588%2C%20Casa%20Verde%2C%20S%C3%A3o%20Paulo%20SP%2002551-000&amp;z=16&amp;output=embed" loading="lazy" style="width:100%;height:100%;min-height:420px;border:0;display:block"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer data-screen-label="12 Rodapé" style="background:#0A0A0A;border-top:1px solid #29282B">
+  <div style="max-width:1200px;margin:0 auto;padding:64px clamp(16px,4vw,40px) 48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:40px;align-items:start">
+    <a href="#topo" aria-label="HIPERVISION, voltar ao início" style="display:flex;flex-direction:column;align-items:center;justify-self:center;text-align:center;gap:12px">
+      <img src="img/logo.png" alt="" style="width:64px;height:64px;object-fit:contain;display:block">
+      <span style="font-weight:800;font-stretch:115%;letter-spacing:0.09em;font-size:22px;text-transform:uppercase;color:#fff">Hipervision</span>
+    </a>
+    <div style="display:flex;flex-direction:column;gap:12px;font-size:15px;align-items:{{ footAlign }};text-align:{{ footText }}">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.09em;color:#7D7D7D;text-transform:uppercase">Horário</span>
+      <span style="color:#E4E5E7">A confirmar</span>
+      <span style="color:#969696">Consulte pelo WhatsApp</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;font-size:15px;align-items:{{ footAlign }};text-align:{{ footText }}">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.09em;color:#7D7D7D;text-transform:uppercase">Contato</span>
+      <a href="{{ mapsLink }}" target="_blank" rel="noopener" style="color:#E4E5E7;line-height:1.5">Rua Brigadeiro Xavier de Brito, 588<br>Casa Verde · São Paulo, SP</a>
+      <a href="{{ waOrc }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px"><img src="img/whatsapp.png" alt="" style="width:22px;height:22px;display:block">WhatsApp · (11) 95084-3938</a>
+      <a href="https://www.instagram.com/hipervisionenvelopamento/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px"><span style="width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%);display:flex;align-items:center;justify-content:center;flex:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="#fff"></circle></svg></span>Instagram · @hipervisionenvelopamento</a>
+    </div>
+  </div>
+  <div style="background:#1B1B1F;border-top:1px solid #29282B">
+  <div style="max-width:1320px;margin:0 auto;padding:28px clamp(16px,4vw,40px) 96px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;font-size:13px;color:#B8BABE">
+    <span>© 2026 Hipervision Envelopamento. Todos os direitos reservados.</span>
+    <span style="display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px"><a href="politica-privacidade.html" style="color:#B8BABE">Política de privacidade</a><a href="politica-cookies.html" style="color:#B8BABE">Política de cookies</a></span>
+    <a href="https://www.visualvaro.com.br" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;line-height:16px;color:#B8BABE;transition:color .25s, transform .25s" style-hover="color:#fff;transform:translateY(-2px)">Site desenvolvido por <img src="img/visualvaro.svg" alt="visualvaro" style="height:16px;width:auto;display:block;position:relative;top:-2px;filter:brightness(0) invert(1);transition:transform .35s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.12)"></a>
+  </div>
+  </div>
+</footer>
+
+<div style="position:fixed;right:16px;bottom:16px;z-index:60;display:flex;flex-direction:column;align-items:center;gap:12px">
+  <a href="{{ mapsLink }}" target="_blank" rel="noopener" aria-label="Abrir no Google Maps" style="width:48px;height:48px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,0.35);transition:transform .2s" style-hover="transform:scale(1.08)"><img src="img/google-maps.svg" alt="" style="width:30px;height:30px;display:block"></a>
+  <a href="{{ wazeLink }}" target="_blank" rel="noopener" aria-label="Abrir no Waze" style="width:48px;height:48px;border-radius:12px;overflow:hidden;display:block;box-shadow:0 6px 18px rgba(0,0,0,0.35);transition:transform .2s" style-hover="transform:scale(1.08)"><img src="img/waze.webp" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></a>
+  <a href="{{ waOrc }}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="width:58px;height:58px;border-radius:50%;overflow:hidden;display:block;box-shadow:0 6px 18px rgba(0,0,0,0.35);transition:transform .2s" style-hover="transform:scale(1.08)"><img src="img/whatsapp.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const WA = '5511950843938';
+const wa = t => 'https://wa.me/' + WA + '?text=' + encodeURIComponent(t);
+const COLORS = [
+  { name: 'Vermelho', hex: '#E0141B' },
+  { name: 'Amarelo', hex: '#F2D200' },
+  { name: 'Azul', hex: '#1A14E6' },
+  { name: 'Verde', hex: '#2EE51A' },
+  { name: 'Rosa', hex: '#F012C8' }
+];
+const APPS = [
+  { src: 'img/a-revuelto.jpg', color: 'Roxo', model: 'Lamborghini Revuelto' },
+  { src: 'img/a-cayenne.jpg', color: 'Verde militar · fosco', model: 'Porsche Cayenne Coupé' },
+  { src: 'img/a-mustang.jpg', color: 'Azul', model: 'Ford Mustang' },
+  { src: 'img/a-911.jpg', color: 'Preto · fosco', model: 'Porsche 911' },
+  { src: 'img/a-defender.jpg', color: 'Bege e preto', model: 'Land Rover Defender' },
+  { src: 'img/a-range.jpg', color: 'Preto · fosco', model: 'Range Rover' }
+];
+const CARDS = [
+  { name: 'Brilhante', desc: 'Reflexo intenso e cor profunda, próximo ao visual de pintura nova.', img: 'img/p-g-farol.jpg', pos: '50% 50%', alt: 'Detalhe de envelopamento verde brilhante' },
+  { name: 'Fosco', desc: 'Superfície sem brilho, visual sóbrio e marcante.', img: 'img/p-suv-roda.jpg', pos: '30% 60%', alt: 'SUV envelopado em cinza fosco' },
+  { name: 'Acetinado', desc: 'Meio-termo entre o fosco e o brilho, com reflexo suave.', img: 'img/p-roxo-grade.jpg', pos: '50% 55%', alt: 'Mercedes envelopado em roxo acetinado' },
+  { name: 'Estampas exclusivas', desc: 'Padrões e grafismos aplicados em toda a carroceria.', img: 'img/p-g-lanterna.jpg', pos: '50% 50%', alt: 'Envelopamento estampado em preto e verde' },
+  { name: 'Combinações de cores', desc: 'Duas ou mais cores no mesmo projeto, com transições e recortes.', img: 'img/p-g-lateral.jpg', pos: '40% 50%', alt: 'Envelopamento com transição de verde para preto' },
+  { name: 'Motos', desc: 'Envelopamento e grafismos também para motocicletas.', img: 'img/p-moto.jpg', pos: '50% 55%', alt: 'Moto envelopada em amarelo e preto' }
+];
+const PROJECTS = [
+  { src: 'img/gt3-5.jpg', name: 'Porsche 911 GT3', tag: 'Amarelo e preto fosco', cat: 'amarelo' },
+  { src: 'img/gt3-1.jpg', name: 'Porsche 911 GT3', tag: 'Preto e amarelo fosco', cat: 'amarelo' },
+  { src: 'img/p-g-angulo.jpg', name: 'Mercedes-AMG G 63', tag: 'Verde brilhante', cat: 'verde' },
+  { src: 'img/p-suv-angulo.jpg', name: 'Denza B5', tag: 'Cinza fosco', cat: 'cinza' },
+  { src: 'img/p-roxo-frente.jpg', name: 'Mercedes Classe C', tag: 'Roxo acetinado', cat: 'roxo' },
+  { src: 'img/p-x6.jpg', name: 'BMW X6', tag: 'Azul fosco', cat: 'azul' },
+  { src: 'img/p-g-traseira2.jpg', name: 'Mercedes-AMG G 63', tag: 'Verde e estampa', cat: 'verde' },
+  { src: 'img/p-moto.jpg', name: 'Moto esportiva', tag: 'Amarelo e preto', cat: 'motos' },
+  { src: 'img/p-suv-frente.jpg', name: 'Denza B5', tag: 'Cinza fosco', cat: 'cinza' },
+  { src: 'img/p-g-frente.jpg', name: 'Mercedes-AMG G 63', tag: 'Verde brilhante', cat: 'verde' },
+  { src: 'img/p-roxo-traseira.jpg', name: 'Mercedes Classe C', tag: 'Roxo acetinado', cat: 'roxo' },
+  { src: 'img/p-suv-traseira.jpg', name: 'Denza B5', tag: 'Cinza fosco', cat: 'cinza' },
+  { src: 'img/p-moto-escura.jpg', name: 'Moto esportiva', tag: 'Grafismo personalizado', cat: 'motos' },
+  { src: 'img/p-g-traseira.jpg', name: 'Mercedes-AMG G 63', tag: 'Estampa exclusiva', cat: 'verde' },
+  { src: 'img/gt3-3.jpg', name: 'Porsche 911 GT3', tag: 'Preto e amarelo fosco', cat: 'amarelo' },
+  { src: 'img/gt3-2.jpg', name: 'Porsche 911 GT3', tag: 'Grafismo no capô', cat: 'amarelo' },
+  { src: 'img/gt3-4.jpg', name: 'Porsche 911 GT3', tag: 'Detalhe traseiro', cat: 'amarelo' }
+];
+const PFILTERS = [['todos', 'Todos'], ['verde', 'Verde'], ['cinza', 'Cinza fosco'], ['amarelo', 'Amarelo'], ['roxo', 'Roxo'], ['azul', 'Azul'], ['motos', 'Motos']];
+const REVIEWS = [
+  { name: 'Wellington Matos', date: 'mar. 2018', text: 'Fui muito bem atendido e gostei muito do resultado final. Material de primeira. Não pensei que ficaria tão bom. Parabéns Hipervision.' },
+  { name: 'Reynaldo Rocha', date: 'jul. 2019', text: 'Para quem é detalhista e gosta de perfeição, achou o lugar.' },
+  { name: 'Gustavo Lapa David', date: 'jan. 2018', text: 'Serviço muito bom… bem executado. Cumpriram com o prometido e cobraram o preço justo!' },
+  { name: 'Juninho Bill', date: 'jul. 2018', text: 'Atendimento nota 1000, profissionais! Material de primeira qualidade.' },
+  { name: 'Thiago Sabino', date: 'fev. 2018', text: 'Serviço rápido e com qualidade!!! Ótimo atendimento e ótimos profissionais!!!' },
+  { name: 'Vinicius Cucher', date: 'jan. 2017', text: 'Atendimento e trampo de primeira, ganharam um cliente, recomendadíssimo!' }
+];
+
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1440, h: typeof window !== 'undefined' ? window.innerHeight : 900, c: 0, f: 0, split: 50, menu: false, scrolled: false };
+  componentDidMount() {
+    this.onR = () => this.setState({ w: window.innerWidth, h: window.innerHeight });
+    this.onS = () => { const s = window.scrollY > 40; if (s !== this.state.scrolled) this.setState({ scrolled: s }); };
+    window.addEventListener('resize', this.onR); window.addEventListener('scroll', this.onS, { passive: true });
+    this.onR(); this.onS();
+    this.reveal();
+  }
+  reveal() {
+    if (typeof IntersectionObserver === 'undefined' || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const seen = new WeakSet();
+    this.io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target; this.io.unobserve(el);
+      const sib = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
+      el.style.transitionDelay = Math.min(sib, 6) * 70 + 'ms';
+      el.style.opacity = '1'; el.style.transform = 'none';
+      setTimeout(() => { el.style.transitionDelay = ''; }, 1400);
+    }), { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+    const scan = () => document.querySelectorAll('main > section > div > *, main [style*="display: grid"] > *, main [style*="display:grid"] > *').forEach(el => {
+      if (seen.has(el) || el.closest('header')) return; seen.add(el);
+      el.style.opacity = '0'; el.style.transform = 'translateY(28px)';
+      el.style.transition = 'opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1)';
+      this.io.observe(el);
+    });
+    scan(); this.scanT = setInterval(scan, 1500);
+  }
+  componentWillUnmount() { if (this.io) this.io.disconnect(); clearInterval(this.scanT); window.removeEventListener('resize', this.onR); window.removeEventListener('scroll', this.onS); }
+  setSplit(e) {
+    const el = this.splitEl; if (!el) return;
+    const r = el.getBoundingClientRect();
+    const p = Math.max(0, Math.min(100, ((e.clientX - r.left) / r.width) * 100));
+    this.setState({ split: Math.round(p * 10) / 10 });
+  }
+  renderVals() {
+    const { w, h, c, f, menu, scrolled } = this.state;
+    const mobile = w < 960;
+    const heroM = w < 768 || h > w;
+    const color = COLORS[c];
+    return {
+      desktop: !mobile, mobile, footAlign: w < 640 ? 'center' : 'flex-start', footText: w < 640 ? 'center' : 'left', menuOpen: mobile && menu,
+      toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
+      closeMenu: () => this.setState({ menu: false }),
+      headerBg: scrolled || menu ? 'rgba(10,10,10,0.92)' : 'rgba(10,10,10,0)',
+      headerLine: scrolled ? '#29282B' : 'transparent',
+      heroAlign: heroM ? 'flex-start' : 'center',
+      heroMinH: heroM ? 'max(900px,100vh)' : 'max(640px,100vh)',
+      heroH1Max: heroM ? '100%' : 'min(50vw,680px)',
+      heroRef: el => { if (el) { const s = heroM ? 'img/mobilee.png' : 'img/web.png'; if (el.getAttribute('src') !== s) el.setAttribute('src', s); } },
+      heroPos: heroM ? '50% 100%' : '70% 50%',
+      heroPad: heroM ? '120px 20px 40px' : '120px clamp(16px,4vw,40px) 80px',
+      bmw: COLORS.map((b, i) => ({ ...b, halo: i === c ? '3px' : '1.5px', select: () => this.setState({ c: i }) })),
+      ...Object.fromEntries(COLORS.map((_, i) => ['bmwOp' + i, i === c ? 1 : 0])),
+      bmwActive: color,
+      bmwPrev: () => this.setState(s => ({ c: (s.c - 1 + COLORS.length) % COLORS.length })),
+      bmwNext: () => this.setState(s => ({ c: (s.c + 1) % COLORS.length })),
+      apps: APPS.map(a => ({ ...a, alt: `${a.model} envelopado, ${a.color}` })),
+      split: this.state.split,
+      splitRef: el => { this.splitEl = el; },
+      splitDown: e => this.setSplit(e),
+      splitMove: e => this.setSplit(e),
+      splitTouch: e => { const t = e.touches && e.touches[0]; if (t) this.setSplit(t); },
+      finishCards: CARDS.map(k => ({ ...k, wa: wa(`Olá, HIPERVISION! Tenho interesse em envelopamento com acabamento ${k.name.toLowerCase()}. Pode me passar um orçamento?`) })),
+      reviews: REVIEWS,
+      projFilters: PFILTERS.map(([k, n]) => { const on = (this.state.pf || 'todos') === k; return { name: n, bg: on ? '#0A0A0A' : 'transparent', fg: on ? '#fff' : '#0A0A0A', select: () => this.setState({ pf: k }) }; }),
+      projects: PROJECTS.filter(p => (this.state.pf || 'todos') === 'todos' || p.cat === this.state.pf).map(p => ({ ...p, alt: `${p.name}, ${p.tag}, projeto HIPERVISION` })),
+      waCor: wa(`Olá, HIPERVISION! Fiz a simulação no site e quero envelopar meu carro na cor ${color.name.toLowerCase()}. Pode me passar um orçamento?`),
+      waOrc: wa('Olá, HIPERVISION! Gostaria de solicitar um orçamento de envelopamento automotivo.'),
+      waEnv: wa('Olá, HIPERVISION! Quero saber mais sobre envelopamento automotivo e solicitar um orçamento.'),
+      waProj: wa('Olá, HIPERVISION! Vi os projetos no site e quero um resultado assim no meu carro.'),
+      waPPF: wa('Olá, HIPERVISION! Gostaria de conhecer as opções de PPF.'),
+      wazeLink: 'https://waze.com/ul?navigate=yes&q=' + encodeURIComponent('Rua Brigadeiro Xavier de Brito, 588, São Paulo - SP, 02551-000'),
+      mapsLink: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('PPF & Envelopamento HIPERVISION, Rua Brigadeiro Xavier de Brito, 588, Casa Verde, São Paulo - SP, 02551-000')
+    };
+  }
+}
+</script>
+</body>
+</html>
