@@ -1,0 +1,11 @@
+ECOSHINE · SITE INSTITUCIONAL (Apache)
+
+1. Apague tudo o que está no servidor e envie TODO o conteúdo desta pasta para a raiz (public_html).
+2. Confira se subiram os arquivos ocultos: .htaccess e .image-slots.state.json.
+3. ANTES de publicar: troque "https://DOMINIO-DO-CLIENTE.com.br" pelo domínio real em index.html, politica-privacidade.html, politica-cookies.html, robots.txt e sitemap.xml (buscar e substituir).
+4. Ative o SSL e "Forçar HTTPS"; escolha a versão sem www e redirecione a outra.
+5. Limpe o cache da hospedagem e teste numa aba anônima.
+
+GOOGLE ADS
+Abra index.html, procure ECO_ADS_ID='' e coloque o ID entre as aspas (ex.: ECO_ADS_ID='AW-123456789').
+A tag só mede quem clicar em "Aceitar" no aviso de cookies.
