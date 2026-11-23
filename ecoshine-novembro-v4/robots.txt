@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://DOMINIO-DO-CLIENTE.com.br/sitemap.xml
